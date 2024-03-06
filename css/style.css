@@ -190,6 +190,7 @@ h2,
 h3,
 h4,
 h5 {
+  margin-top: 0;
   font-family: "Finlandica BOLD";
 }
 
@@ -310,6 +311,24 @@ h5 {
     height: 60%;
     background-position: right bottom;
   }
+}
+
+.preview .wrapper {
+  display: flex;
+  gap: 2.625rem;
+  padding-top: 4.125rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #3d3d40;
+}
+.preview .wrapper > * {
+  flex: 1;
+}
+.preview .wrapper h2 {
+  font-size: 2rem;
+  line-height: 1.11;
+  color: #4358c1;
+  text-transform: uppercase;
 }
 
 button {

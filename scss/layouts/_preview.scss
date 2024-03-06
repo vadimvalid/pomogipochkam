@@ -1,0 +1,21 @@
+.preview {
+  .wrapper {
+    display: flex;
+    gap: torem(42);
+    padding-top: torem(66);
+    font-size: torem(20);
+    line-height: 1.25;
+    color: $black;
+
+    > * {
+      flex: 1;
+    }
+
+    h2 {
+      font-size: $xl;
+      line-height: 1.11;
+      color: $mainColor;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -3,9 +3,10 @@ html {
 }
 
 body {
-  font-family: "Montserrat-Regular";
+  font-family: "Open-sans medium";
   color: $mainColor;
   font-size: $md;
+  text-wrap: balance;
 }
 
 .container {

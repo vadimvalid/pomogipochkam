@@ -1,391 +1,60 @@
 .header {
-  padding: torem(16) 0 torem(14);
-  border-bottom: 1px solid $lightGreyOpacity;
-  overflow: hidden;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $white;
-    transform: translateX(-100%);
-    transition: all 0.5s ease;
-  }
+  padding: torem(26) 0 torem(21);
 
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: torem(15);
-    grid-row-gap: torem(15);
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    gap: clamp(torem(36), 5vw, torem(84));
+  }
 
-    @include sm-breakpoint {
-      grid-template-columns: auto 1fr auto;
-      grid-template-rows: 1fr;
-    }
+  &__logo {
+    flex-shrink: 0;
+    font-family: "Finlandica medium";
+    font-size: torem(25);
+    line-height: 1.14;
   }
 
   &__nav {
-    grid-column: 1/-1;
-    grid-row: 2/-1;
+    flex: 1;
 
     ul {
       display: flex;
       flex-wrap: wrap;
-      gap: torem(15) torem(41);
+      gap: torem(10) clamp(torem(36), 5vw, torem(76));
 
       li {
-        font-family: "Montserrat-Medium";
-        font-size: $md;
+        a {
+          font-size: $sm;
+          line-height: 1.37;
+          color: $black;
+          letter-spacing: 0.2px;
+          transition: all 0.3s ease;
 
-        > a {
-          display: inline-block;
-          position: relative;
-
-          &:before {
-            content: "";
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background-color: $secondaryColor;
-            transition: all 0.3s ease;
-          }
-
-          &:hover {
-            &:before {
-              width: 100%;
-            }
+          &:hover,
+          &:active {
+            color: $secondaryColor;
           }
         }
       }
-    }
-
-    @include sm-breakpoint {
-      grid-column: auto;
-      display: none;
-
-      ul {
-        flex-direction: column;
-        gap: torem(35);
-      }
-
-      li {
-        font-size: $lg;
-      }
-    }
-  }
-
-  &__contact {
-    grid-column: 4/5;
-    display: flex;
-    gap: clamp(torem(50), 3vw, torem(75));
-
-    @include sm-breakpoint {
-      grid-column: auto;
-      display: none;
-    }
-  }
-
-  &__social {
-    display: flex;
-    gap: clamp(torem(20), 3vw, torem(37));
-
-    a {
-      width: torem(20);
-      height: torem(20);
-
-      &:last-child {
-        svg {
-          &:hover {
-            path {
-              stroke: $secondaryColor;
-            }
-          }
-        }
-      }
-    }
-
-    svg {
-      width: torem(20);
-      height: torem(20);
-
-      &:hover {
-        g {
-          fill: $secondaryColor;
-        }
-      }
-    }
-
-    @include sm-breakpoint {
-      svg {
-        width: torem(37);
-        height: torem(37);
-      }
-    }
-  }
-
-  &__phone {
-    font-family: "Montserrat-Medium";
-    font-size: $md;
-
-    > a {
-      display: flex;
-      align-items: center;
-      gap: torem(5);
-    }
-
-    img {
-      width: torem(20);
-      height: torem(20);
-    }
-
-    @include sm-breakpoint {
-      font-size: torem(20);
-
-      > a {
-        gap: torem(7);
-      }
-
-      img {
-        width: torem(24);
-        height: torem(24);
-      }
-    }
-  }
-
-  &__login {
-    grid-column: 3/4;
-
-    > a {
-      display: flex;
-      align-items: center;
-      gap: torem(6);
-      color: $grey;
-      font-size: $sm;
-
-      &:hover {
-        color: $secondaryColor;
-      }
-    }
-
-    svg {
-      width: torem(20);
-      height: torem(20);
-
-      &:hover {
-        path {
-          stroke: $secondaryColor;
-        }
-      }
-    }
-
-    p {
-      display: inline-block;
-      margin: 0;
-      border-bottom: 1px solid currentColor;
-    }
-
-    @include sm-breakpoint {
-      grid-column: auto;
-      display: none;
-
-      > a {
-        gap: torem(9);
-        font-size: torem(21);
-      }
-
-      svg {
-        width: torem(30);
-        height: torem(30);
-      }
-    }
-  }
-
-  &__address {
-    grid-column: 2/3;
-    display: block;
-    font-size: $xs;
-    color: $grey;
-
-    p {
-      margin: 0;
-    }
-
-    @include sm-breakpoint {
-      grid-column: auto;
-      display: none;
     }
   }
 
   &__burger {
-    display: none;
-    align-items: center;
-    justify-content: flex-end;
-    gap: torem(9);
-
-    > p {
-      margin: 0;
-      font-family: "Montserrat-Medium";
-      font-size: $sm;
-    }
-
-    > button {
-      display: flex;
-      flex-direction: column;
-      gap: torem(6);
-      width: torem(29);
-      padding: 0;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-
-      > span {
-        width: 100%;
-        height: 4px;
-        border-radius: 6px;
-        background: $mainColor;
-        transition: 0.5s;
-      }
-    }
-
-    @include sm-breakpoint {
-      display: flex;
-    }
-  }
-
-  &__bag {
-    grid-column: 5/6;
-    position: relative;
+    all: unset;
+    flex-shrink: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: torem(29);
+    height: torem(16);
+    cursor: pointer;
 
-    &:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      display: none;
+    > span {
       width: 100%;
-      height: torem(52);
-      background-image: url("../images/icons/bag-bg.svg");
-      background-repeat: no-repeat;
-      background-size: 120% 100%;
-      background-position: center;
-      transform: translate(-50%, calc(-50% - 7px));
-      z-index: -1;
-    }
-
-    @include sm-breakpoint {
-      grid-column: auto;
-      padding-bottom: torem(10);
-
-      &:before {
-        display: block;
-      }
-    }
-  }
-
-  &__logo {
-    grid-column: 1/2;
-
-    img {
-      object-fit: contain;
-
-      @include sm-breakpoint {
-        width: auto;
-        height: torem(27);
-      }
-    }
-  }
-
-  &--active {
-    position: relative;
-    height: 100vh;
-    border: none;
-
-    .container {
-      padding: 0;
-    }
-
-    &:before {
-      transform: translateX(0);
-    }
-
-    .wrapper {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr auto auto;
-    }
-
-    .header {
-      &__burger {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        z-index: 1;
-
-        > p {
-          display: none;
-        }
-
-        > button {
-          > span {
-            width: 100%;
-            height: 4px;
-            transform-origin: center;
-
-            &:first-child {
-              width: 65%;
-              transform: rotate(45deg) translate(8px, 5px);
-            }
-
-            &:nth-child(2) {
-              transform: translateX(300%);
-              opacity: 1;
-            }
-
-            &:last-child {
-              width: 65%;
-              transform: rotate(-45deg) translate(9px, -6px);
-            }
-          }
-        }
-      }
-
-      &__bag {
-        display: none;
-      }
-
-      &__nav {
-        grid-row: 1/2;
-        display: flex;
-        padding: torem(49) torem(42);
-        border-bottom: 1px solid #d9d9d9;
-        z-index: 1;
-      }
-
-      &__login {
-        grid-row: 3/4;
-        display: block;
-        padding: torem(32) torem(42);
-        z-index: 1;
-      }
-
-      &__contact {
-        grid-row: 2/3;
-        display: flex;
-        flex-direction: column;
-        gap: torem(28);
-        padding: torem(55) torem(42) torem(36);
-        border-bottom: 1px solid #d9d9d9;
-        z-index: 1;
-      }
+      height: torem(3);
+      background-color: $mainColor;
+      border-radius: 6px;
     }
   }
 }

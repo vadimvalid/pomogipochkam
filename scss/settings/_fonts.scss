@@ -1,13 +1,27 @@
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-family: "Finlandica BOLD";
+  src: url("../fonts/Finlandica-Bold.woff2") format("woff2");
   font-display: swap;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: "Montserrat-Medium";
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-family: "Finlandica medium";
+  src: url("../fonts/Finlandica-Medium.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Open-sans bold";
+  src: url("../fonts/OpenSansBold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open-sans medium";
+  src: url("../fonts/OpenSansMediium.woff2") format("woff2");
   font-display: swap;
   font-weight: 500;
 }

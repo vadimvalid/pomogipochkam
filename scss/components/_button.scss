@@ -1,0 +1,17 @@
+button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: torem(15) torem(30);
+  border-radius: 24px;
+  background-color: $colorYellow;
+  font-size: $sm;
+  line-height: 1.22;
+  color: $black;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $colorYellowHover;
+  }
+}

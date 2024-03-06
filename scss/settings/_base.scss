@@ -1,0 +1,40 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Montserrat-Regular";
+  color: $mainColor;
+  font-size: $md;
+}
+
+.container {
+  max-width: 1255px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 100vh;
+}

@@ -1,0 +1,27 @@
+.breadcrumbs {
+  ol {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: torem(5);
+    margin: 0;
+    padding: torem(37) 0 torem(30);
+    list-style-type: none;
+    font-family: "Montserrat-Medium";
+    font-size: $xs;
+    color: $grey;
+
+    li {
+      &:not(:last-child) {
+        &::after {
+          content: "/";
+          margin-left: torem(5);
+        }
+      }
+    }
+
+    @include sm-breakpoint {
+      padding: torem(16) 0 torem(7);
+    }
+  }
+}

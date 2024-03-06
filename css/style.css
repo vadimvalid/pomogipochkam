@@ -331,6 +331,23 @@ h5 {
   text-transform: uppercase;
 }
 
+.subtitle {
+  padding: 3.4375rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #3d3d40;
+}
+.subtitle h2 {
+  font-family: "Finlandica medium";
+  font-weight: 500;
+  opacity: 0.8;
+  text-wrap: pretty;
+}
+.subtitle .wrapper {
+  width: 75%;
+  text-wrap: pretty;
+}
+
 button {
   all: unset;
   display: flex;

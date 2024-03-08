@@ -4,12 +4,7 @@
     text-transform: uppercase;
 
     h2 {
-      font-family: "Finlandica medium";
-      font-size: $xl;
-      color: $black;
-      font-weight: 500;
-      opacity: 0.8;
-      text-wrap: pretty;
+      @include sectionTitle;
     }
 
     .wrapper {

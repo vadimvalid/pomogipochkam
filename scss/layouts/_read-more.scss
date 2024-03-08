@@ -1,0 +1,35 @@
+.section {
+  &.read-more {
+    padding: torem(66) 0;
+
+    h2 {
+      @include sectionTitle;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: torem(44);
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: torem(22);
+
+        .item {
+          @include sectionShadow;
+
+          display: flex;
+
+          a {
+            padding: torem(31) torem(34);
+            font-family: "Open-sans bold";
+            font-size: torem(20);
+            line-height: 1.2;
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}

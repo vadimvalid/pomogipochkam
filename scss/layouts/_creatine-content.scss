@@ -1,0 +1,59 @@
+.creatine-content {
+  padding-bottom: torem(32);
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: torem(112);
+    font-size: torem(20);
+    line-height: 1.25;
+
+    strong,
+    b {
+      font-family: "Open-sans bold";
+    }
+
+    .item {
+      flex: 0 1 50%;
+      text-wrap: pretty;
+
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: torem(22);
+      }
+
+      &:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: torem(18) torem(23);
+      }
+
+      &__row {
+        display: flex;
+        align-items: center;
+        gap: torem(28);
+        width: calc(50% - torem(12));
+        font-family: "Open-sans bold";
+
+        &:first-child {
+          color: $mainColor;
+        }
+
+        &:nth-child(2) {
+          color: $secondaryColor;
+        }
+
+        &:last-child {
+          justify-content: center;
+          align-items: baseline;
+          width: 100%;
+          font-family: "Open-sans regular";
+          font-size: $md;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

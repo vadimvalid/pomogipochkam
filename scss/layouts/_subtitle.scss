@@ -1,18 +1,24 @@
-.subtitle {
-  padding: torem(55) 0;
-  text-transform: uppercase;
+.section {
+  &.subtitle {
+    padding: torem(55) 0;
+    text-transform: uppercase;
 
-  h2 {
-    font-family: "Finlandica medium";
-    font-size: $xl;
-    color: $black;
-    font-weight: 500;
-    opacity: 0.8;
-    text-wrap: pretty;
-  }
+    h2 {
+      font-family: "Finlandica medium";
+      font-size: $xl;
+      color: $black;
+      font-weight: 500;
+      opacity: 0.8;
+      text-wrap: pretty;
+    }
 
-  .wrapper {
-    width: 50%;
-    text-wrap: pretty;
+    .wrapper {
+      width: 50%;
+      text-wrap: pretty;
+    }
+
+    &.creatine {
+      padding: torem(58) 0 torem(44);
+    }
   }
 }

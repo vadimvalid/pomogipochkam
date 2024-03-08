@@ -116,6 +116,12 @@ textarea:not([rows]) {
   font-display: swap;
   font-weight: 500;
 }
+@font-face {
+  font-family: "Open-sans regular";
+  src: url("../fonts/OpenSansRegular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
 html {
   font-size: 16px;
 }
@@ -332,11 +338,11 @@ h5 {
   text-transform: uppercase;
 }
 
-.subtitle {
+.section.subtitle {
   padding: 3.4375rem 0;
   text-transform: uppercase;
 }
-.subtitle h2 {
+.section.subtitle h2 {
   font-family: "Finlandica medium";
   font-size: 2rem;
   color: #3d3d40;
@@ -344,9 +350,12 @@ h5 {
   opacity: 0.8;
   text-wrap: pretty;
 }
-.subtitle .wrapper {
+.section.subtitle .wrapper {
   width: 50%;
   text-wrap: pretty;
+}
+.section.subtitle.creatine {
+  padding: 3.625rem 0 2.75rem;
 }
 
 .section.table .wrapper {
@@ -366,6 +375,7 @@ h5 {
   flex-direction: row;
   align-items: flex-start;
   gap: 1.25rem;
+  font-family: "Open-sans regular";
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.22;
@@ -421,6 +431,57 @@ h5 {
   flex-direction: column;
   align-items: flex-start;
   gap: 1.375rem;
+}
+
+.creatine-content {
+  padding-bottom: 2rem;
+}
+.creatine-content .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+.creatine-content .wrapper strong,
+.creatine-content .wrapper b {
+  font-family: "Open-sans bold";
+}
+.creatine-content .wrapper .item {
+  flex: 0 1 50%;
+  text-wrap: pretty;
+}
+.creatine-content .wrapper .item:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+}
+.creatine-content .wrapper .item:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.125rem 1.4375rem;
+}
+.creatine-content .wrapper .item__row {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  width: calc(50% - 0.75rem);
+  font-family: "Open-sans bold";
+}
+.creatine-content .wrapper .item__row:first-child {
+  color: #4358c1;
+}
+.creatine-content .wrapper .item__row:nth-child(2) {
+  color: #db790f;
+}
+.creatine-content .wrapper .item__row:last-child {
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  font-family: "Open-sans regular";
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .button {

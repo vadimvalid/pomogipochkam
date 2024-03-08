@@ -509,6 +509,54 @@ h5 {
   gap: 1.25rem;
 }
 
+.section.knowledge {
+  padding: 3.25rem 0;
+  background: radial-gradient(151.35% 47.47% at 50% 56.37%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #4358c0;
+}
+.section.knowledge .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
+}
+.section.knowledge .wrapper .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section.knowledge .wrapper .buttons {
+  display: flex;
+  gap: 1.625rem;
+}
+.section.knowledge .wrapper .more {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.2;
+}
+.section.knowledge .wrapper .more img {
+  width: 1.9375rem;
+  height: 2.1875rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.section.knowledge .wrapper .more p {
+  max-width: 12.5rem;
+}
+.section.knowledge h2 {
+  padding: 0.25rem 0.3125rem;
+  background: #fff;
+  font-family: "Finlandica medium";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #4358c1;
+}
+
 .button {
   all: unset;
   display: flex;
@@ -522,6 +570,18 @@ h5 {
   line-height: 1.37;
   color: #fff;
   cursor: pointer;
+}
+.button--secondary {
+  padding: 1rem 1.6875rem;
+  background: #db790f;
+  font-size: 1rem;
+  color: #fff;
+}
+.button--white {
+  padding: 1rem 1.6875rem;
+  background: #fff;
+  font-size: 1rem;
+  color: #4358c1;
 }
 
 .breadcrumbs ol {

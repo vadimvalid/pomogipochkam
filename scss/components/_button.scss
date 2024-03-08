@@ -11,4 +11,18 @@
   line-height: 1.37;
   color: $white;
   cursor: pointer;
+
+  &--secondary {
+    padding: torem(16) torem(27);
+    background: $secondaryColor;
+    font-size: $md;
+    color: $white;
+  }
+
+  &--white {
+    padding: torem(16) torem(27);
+    background: $white;
+    font-size: $md;
+    color: $mainColor;
+  }
 }

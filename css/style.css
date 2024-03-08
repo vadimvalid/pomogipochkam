@@ -121,8 +121,9 @@ html {
 }
 
 body {
+  background: #f7f7f7;
   font-family: "Open-sans medium";
-  color: #4358c1;
+  color: #3d3d40;
   font-size: 1rem;
   text-wrap: balance;
 }
@@ -333,31 +334,107 @@ h5 {
 
 .subtitle {
   padding: 3.4375rem 0;
-  font-size: 2rem;
   text-transform: uppercase;
-  color: #3d3d40;
 }
 .subtitle h2 {
   font-family: "Finlandica medium";
+  font-size: 2rem;
+  color: #3d3d40;
   font-weight: 500;
   opacity: 0.8;
   text-wrap: pretty;
 }
 .subtitle .wrapper {
-  width: 75%;
+  width: 50%;
   text-wrap: pretty;
 }
 
-button {
+.section.table .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.0625rem;
+  padding: 1.9375rem 2.125rem;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
+}
+.section.table .wrapper__items {
+  display: flex;
+  flex-direction: column;
+}
+.section.table .wrapper__items:last-child {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem;
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.22;
+  text-wrap: pretty;
+}
+.section.table .wrapper__items:last-child .button {
+  flex: 0 1 26%;
+  font-style: normal;
+}
+.section.table .wrapper .table__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2.0625rem;
+  padding: 2.8125rem 0;
+  border-bottom: 1px solid #e1e5e4;
+}
+.section.table .wrapper .table__item:first-child {
+  padding-top: 0;
+}
+.section.table .wrapper .table__item h3 {
+  flex: 1;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  color: #4358c1;
+}
+.section.table .wrapper .table__item h3:first-child {
+  flex: 0 1 20%;
+}
+.section.table .wrapper .table__item h3:nth-child(2) {
+  flex-grow: 1.5;
+}
+.section.table .wrapper .table__item .item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-size: 1.125rem;
+  line-height: 1.33;
+}
+.section.table .wrapper .table__item .item:first-child {
+  flex: 0 1 20%;
+}
+.section.table .wrapper .table__item .item picture,
+.section.table .wrapper .table__item .item img {
+  width: 3.875rem;
+  height: 5.125rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.section.table .wrapper .table__item .item:nth-child(2) {
+  flex-grow: 1.5;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.375rem;
+}
+
+.button {
   all: unset;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.9375rem 1.875rem;
-  border-radius: 24px;
-  font-size: 0.875rem;
-  line-height: 1.22;
-  color: #3d3d40;
+  padding: 0.8125rem 1.4375rem;
+  border-radius: 42px;
+  background: #4358c1;
+  font-family: "Open-sans bold";
+  font-size: 0.8125rem;
+  line-height: 1.37;
+  color: #fff;
   cursor: pointer;
 }
 

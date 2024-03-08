@@ -1,18 +1,18 @@
 .subtitle {
   padding: torem(55) 0;
-  font-size: $xl;
   text-transform: uppercase;
-  color: $black;
 
   h2 {
     font-family: "Finlandica medium";
+    font-size: $xl;
+    color: $black;
     font-weight: 500;
     opacity: 0.8;
     text-wrap: pretty;
   }
 
   .wrapper {
-    width: 75%;
+    width: 50%;
     text-wrap: pretty;
   }
 }

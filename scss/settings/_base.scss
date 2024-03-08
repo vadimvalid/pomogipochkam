@@ -3,10 +3,10 @@ html {
 }
 
 body {
+  background: #f7f7f7;
   font-family: "Open-sans medium";
-  color: $mainColor;
+  color: $black;
   font-size: $md;
-  text-wrap: balance;
 }
 
 .container {
@@ -53,5 +53,6 @@ h2,
 h3,
 h4,
 h5 {
+  margin-top: 0;
   font-family: "Finlandica BOLD";
 }

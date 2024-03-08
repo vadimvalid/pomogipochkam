@@ -1,0 +1,29 @@
+.section {
+  &.description {
+    padding: torem(44) 0 torem(66);
+
+    .wrapper {
+      @include sectionShadow;
+
+      display: flex;
+      justify-content: space-between;
+      gap: torem(100);
+      padding: torem(45) torem(78) torem(64) torem(34);
+      font-family: "Open-sans regular";
+      font-size: $lg;
+      line-height: 1.33;
+
+      strong,
+      b {
+        font-family: "Open-sans bold";
+      }
+
+      .item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: torem(20);
+      }
+    }
+  }
+}

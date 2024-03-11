@@ -1,0 +1,35 @@
+.section {
+  &.links {
+    padding: torem(55) torem(66);
+
+    .wrapper {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: torem(4) torem(20);
+      width: 80%;
+      margin: 0 auto;
+
+      .item {
+        flex: 0 1 calc(50% - torem(18));
+        display: flex;
+        align-items: center;
+        gap: torem(40);
+        padding: torem(20) torem(42) torem(20) 0;
+
+        img {
+          width: torem(72);
+          height: torem(78);
+          object-fit: contain;
+        }
+
+        a {
+          font-family: "Open-sans bold";
+          font-size: torem(20);
+          line-height: 1.37;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+}

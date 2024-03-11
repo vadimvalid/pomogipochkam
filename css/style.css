@@ -957,6 +957,85 @@ h5 {
   font-style: normal;
 }
 
+.title-description:has(+ .info) {
+  padding-bottom: 4.125rem;
+}
+
+.section.info {
+  padding: 4.5rem 3.875rem;
+  background: radial-gradient(151.35% 47.47% at 50% 56.37%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #fff;
+}
+.section.info .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.25rem;
+}
+.section.info .wrapper .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section.info .wrapper h2 {
+  padding: 0.25rem 0.3125rem;
+  background: #e3483a;
+  font-family: "Finlandica medium";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #fff;
+}
+.section.info .info__content {
+  display: flex;
+  align-items: center;
+  gap: 4.25rem;
+}
+.section.info .info__content__image {
+  flex: 0 1 30%;
+}
+.section.info .info__content__image img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.section.info .info__content__text {
+  flex: 0 1 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+.section.info .info__content__text > p {
+  font-size: 1.5rem;
+  line-height: 1.16;
+}
+.section.info .info__content__text > p > a {
+  font-family: "Open-sans bold";
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.section.info .info__content__text h4 {
+  font-family: "Open-sans bold";
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+.section.info .info__content__text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding-left: 2.25rem;
+  list-style-type: disc;
+}
+.section.info .info__content__text ul li {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  list-style-type: initial;
+}
+.section.info .info__content__text ul li::marker {
+  font-size: 1.75rem;
+  color: #009a35;
+}
+
 .button {
   all: unset;
   display: flex;

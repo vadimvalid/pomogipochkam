@@ -122,3 +122,7 @@
     }
   }
 }
+
+.title-description:has(+ .info) {
+  padding-bottom: torem(66);
+}

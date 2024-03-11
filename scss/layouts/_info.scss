@@ -1,0 +1,94 @@
+.section {
+  &.info {
+    padding: torem(72) torem(62);
+    background: radial-gradient(
+        151.35% 47.47% at 50% 56.37%,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #fff;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: torem(52);
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: torem(8);
+      }
+
+      h2 {
+        padding: torem(4) torem(5);
+        background: $red;
+        font-family: "Finlandica medium";
+        font-size: $xl;
+        font-weight: 500;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: $white;
+      }
+    }
+
+    .info {
+      &__content {
+        display: flex;
+        align-items: center;
+        gap: torem(68);
+
+        &__image {
+          flex: 0 1 30%;
+
+          img {
+            object-fit: contain;
+          }
+        }
+
+        &__text {
+          flex: 0 1 70%;
+          display: flex;
+          flex-direction: column;
+          gap: torem(25);
+
+          > p {
+            font-size: torem(24);
+            line-height: 1.16;
+
+            > a {
+              font-family: "Open-sans bold";
+              text-decoration-line: underline;
+            }
+          }
+
+          h4 {
+            font-family: "Open-sans bold";
+            font-size: torem(20);
+            line-height: 1.25;
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: torem(14);
+            padding-left: torem(36);
+            list-style-type: disc;
+
+            li {
+              font-size: torem(20);
+              line-height: 1.25;
+              list-style-type: initial;
+
+              &::marker {
+                font-size: torem(28);
+                color: $green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

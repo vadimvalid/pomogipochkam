@@ -36,6 +36,12 @@
             color: $secondaryColor;
           }
         }
+
+        &.active {
+          a {
+            color: $secondaryColor;
+          }
+        }
       }
     }
   }

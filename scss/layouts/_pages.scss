@@ -83,3 +83,38 @@
     }
   }
 }
+
+.zabolevaniya {
+  .hero {
+    padding: torem(121) 0 torem(122);
+    background: radial-gradient(
+        101.79% 48.18% at 52.92% 94.32%,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #e1e5e4;
+
+    &:after {
+      background-image: image-set(
+        url("../images/zabolevaniya/hero.webp") 1x,
+        url("../images/zabolevaniya/hero-2x.webp") 2x
+      );
+
+      background-position: 66% bottom;
+    }
+
+    h1 {
+      color: $black;
+    }
+  }
+
+  .preview {
+    padding-bottom: torem(55);
+
+    .wrapper {
+      h2 {
+        color: $red;
+      }
+    }
+  }
+}

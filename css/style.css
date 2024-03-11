@@ -233,6 +233,9 @@ h5 {
 .header__nav ul li a:hover, .header__nav ul li a:active {
   color: #db790f;
 }
+.header__nav ul li.active a {
+  color: #db790f;
+}
 .header__burger {
   all: unset;
   flex-shrink: 0;
@@ -653,6 +656,25 @@ h5 {
   text-align: center;
 }
 
+.zabolevaniya .hero {
+  padding: 7.5625rem 0 7.625rem;
+  background: radial-gradient(101.79% 48.18% at 52.92% 94.32%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #e1e5e4;
+}
+.zabolevaniya .hero:after {
+  background-image: -webkit-image-set(url("../images/zabolevaniya/hero.webp") 1x, url("../images/zabolevaniya/hero-2x.webp") 2x);
+  background-image: image-set(url("../images/zabolevaniya/hero.webp") 1x, url("../images/zabolevaniya/hero-2x.webp") 2x);
+  background-position: 66% bottom;
+}
+.zabolevaniya .hero h1 {
+  color: #3d3d40;
+}
+.zabolevaniya .preview {
+  padding-bottom: 3.4375rem;
+}
+.zabolevaniya .preview .wrapper h2 {
+  color: #e3483a;
+}
+
 .section.links {
   padding: 3.4375rem 4.125rem;
 }
@@ -779,6 +801,239 @@ h5 {
 }
 .section.map .wrapper .item:nth-child(3) {
   flex: 0 1 100%;
+}
+
+.section.hbp .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.0625rem;
+  padding: 1.9375rem 2.125rem;
+  border-radius: 18px;
+  background: #3d3d40;
+  box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
+}
+.section.hbp .wrapper h2 {
+  font-family: "Open-sans bold";
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+.section.hbp .wrapper .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.875rem 1fr 1.875rem 1fr 1.875rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.875rem;
+  padding-bottom: 3.125rem;
+  border-bottom: 2px solid #e1e5e4;
+  font-size: 1.125rem;
+  line-height: 1.07;
+  color: #fff;
+}
+.section.hbp .wrapper .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.625rem;
+}
+.section.hbp .wrapper__items {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  font-family: "Open-sans regular";
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.22;
+  color: #fff;
+  text-wrap: pretty;
+}
+.section.hbp .wrapper__items .button {
+  flex: 0 1 26%;
+  font-style: normal;
+}
+
+.title-description {
+  padding: 2.75rem 0 0.3125rem;
+}
+.title-description .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.title-description .wrapper h2 {
+  width: 50%;
+  margin: 1.875rem 0;
+  font-family: "Finlandica medium";
+  font-size: 2rem;
+  line-height: 1.11;
+  color: #e3483a;
+  font-weight: 500;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+.title-description .wrapper > p {
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #3d3d40;
+}
+.title-description .wrapper .block {
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  padding: 2rem 2.125rem;
+}
+.title-description .wrapper .block__content {
+  display: flex;
+  padding-bottom: 2.1875rem;
+  border-bottom: 2px solid #e1e5e4;
+}
+.title-description .wrapper .block__content h3 {
+  font-family: "Open-sans bold";
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.title-description .wrapper .block__content p {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+.title-description .wrapper .block__content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding-left: 2.25rem;
+  list-style-type: disc;
+}
+.title-description .wrapper .block__content ul p {
+  margin-left: -2.25rem;
+}
+.title-description .wrapper .block__content ul li {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  list-style-type: initial;
+}
+.title-description .wrapper .block__content ul li::marker {
+  font-size: 1.75rem;
+  color: #e3483a;
+}
+.title-description .wrapper .block__content .item:first-child {
+  flex: 0 1 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1875rem;
+}
+.title-description .wrapper .block__content .item:last-child {
+  flex: 0 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1.875rem;
+}
+.title-description .wrapper .block__content--images .item:first-child {
+  flex: 0 1 40%;
+}
+.title-description .wrapper .block__content--images .item:last-child {
+  flex: 0 1 60%;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.title-description .wrapper .block__bottom {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  font-family: "Open-sans regular";
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.22;
+  text-wrap: pretty;
+}
+.title-description .wrapper .block__bottom .button {
+  flex: 0 1 26%;
+  font-style: normal;
+}
+
+.title-description:has(+ .info) {
+  padding-bottom: 4.125rem;
+}
+
+.section.info {
+  padding: 4.5rem 3.875rem;
+  background: radial-gradient(151.35% 47.47% at 50% 56.37%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #fff;
+}
+.section.info .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.25rem;
+}
+.section.info .wrapper .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section.info .wrapper h2 {
+  padding: 0.25rem 0.3125rem;
+  background: #e3483a;
+  font-family: "Finlandica medium";
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #fff;
+}
+.section.info .info__content {
+  display: flex;
+  align-items: center;
+  gap: 4.25rem;
+}
+.section.info .info__content__image {
+  flex: 0 1 30%;
+}
+.section.info .info__content__image img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.section.info .info__content__text {
+  flex: 0 1 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+.section.info .info__content__text > p {
+  font-size: 1.5rem;
+  line-height: 1.16;
+}
+.section.info .info__content__text > p > a {
+  font-family: "Open-sans bold";
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+.section.info .info__content__text h4 {
+  font-family: "Open-sans bold";
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+.section.info .info__content__text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding-left: 2.25rem;
+  list-style-type: disc;
+}
+.section.info .info__content__text ul li {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  list-style-type: initial;
+}
+.section.info .info__content__text ul li::marker {
+  font-size: 1.75rem;
+  color: #009a35;
 }
 
 .button {

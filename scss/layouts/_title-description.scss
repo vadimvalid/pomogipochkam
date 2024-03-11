@@ -1,0 +1,128 @@
+.title-description {
+  padding: torem(44) 0 torem(5);
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      width: 50%;
+      margin: torem(30) 0;
+      font-family: "Finlandica medium";
+      font-size: $xl;
+      line-height: 1.11;
+      color: $red;
+      font-weight: 500;
+      opacity: 0.8;
+      text-transform: uppercase;
+    }
+
+    > p {
+      margin-bottom: torem(40);
+      font-size: torem(20);
+      line-height: 1.25;
+      color: $black;
+    }
+
+    .block {
+      @include sectionShadow;
+
+      display: flex;
+      flex-direction: column;
+      gap: torem(22);
+      padding: torem(32) torem(34);
+
+      &__content {
+        display: flex;
+        padding-bottom: torem(35);
+        border-bottom: 2px solid $grey;
+
+        h3 {
+          font-family: "Open-sans bold";
+          font-size: torem(24);
+          line-height: 1;
+        }
+
+        p {
+          font-size: torem(20);
+          line-height: 1.25;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: torem(14);
+          padding-left: torem(36);
+          list-style-type: disc;
+
+          p {
+            margin-left: torem(-36);
+          }
+
+          li {
+            font-size: torem(20);
+            line-height: 1.25;
+            list-style-type: initial;
+
+            &::marker {
+              font-size: torem(28);
+              color: $red;
+            }
+          }
+        }
+
+        .item {
+          &:first-child {
+            flex: 0 1 70%;
+            display: flex;
+            flex-direction: column;
+            gap: torem(35);
+          }
+
+          &:last-child {
+            flex: 0 1 30%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: torem(30);
+          }
+        }
+
+        &--images {
+          .item {
+            &:first-child {
+              flex: 0 1 40%;
+            }
+
+            &:last-child {
+              flex: 0 1 60%;
+              display: flex;
+              align-items: center;
+              gap: torem(20);
+            }
+          }
+        }
+      }
+
+      &__bottom {
+        display: flex;
+        align-items: flex-start;
+        gap: torem(20);
+        font-family: "Open-sans regular";
+        font-size: $lg;
+        font-style: italic;
+        line-height: 1.22;
+        text-wrap: pretty;
+
+        .button {
+          flex: 0 1 26%;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+.title-description:has(+ .info) {
+  padding-bottom: torem(66);
+}

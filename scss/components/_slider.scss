@@ -1,0 +1,52 @@
+.swiffy-slider {
+  margin-bottom: torem(85);
+
+  ul {
+    @include sectionShadow;
+
+    padding: torem(38) torem(34) torem(38) torem(12);
+
+    li {
+      display: flex;
+      align-items: center;
+
+      img {
+        flex: 0 1 15%;
+        height: torem(112);
+        width: auto;
+        object-fit: contain;
+      }
+
+      p {
+        flex: 1;
+      }
+    }
+  }
+
+  .slider-nav {
+    &:after {
+      background-color: $black;
+      opacity: 0.5;
+    }
+  }
+
+  .slider-indicators {
+    bottom: -30px;
+    left: 0;
+    justify-content: flex-start;
+    gap: torem(10);
+
+    > * {
+      width: torem(10);
+      height: torem(10);
+      background-color: $mainColor;
+      border: none;
+      filter: none;
+      opacity: 1;
+    }
+
+    > .active {
+      background-color: $secondaryColor;
+    }
+  }
+}

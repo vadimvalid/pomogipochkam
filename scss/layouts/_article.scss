@@ -70,6 +70,10 @@
         align-items: center;
         gap: torem(30);
 
+        .image {
+          flex: 0 1 10%;
+        }
+
         .text {
           font-family: "Open-sans bold";
           font-size: torem(24);
@@ -79,7 +83,7 @@
       }
 
       &--secondary {
-        margin-bottom: torem(55);
+        margin-bottom: torem(30);
 
         .wrapper {
           .text {
@@ -117,7 +121,8 @@
       ol {
         display: flex;
         flex-direction: column;
-        gap: torem(20);
+        gap: torem(10);
+        margin-top: torem(24);
         padding-left: 0;
 
         li {
@@ -126,6 +131,7 @@
 
         p {
           margin-top: torem(30);
+          margin-bottom: torem(18);
         }
       }
 
@@ -133,8 +139,8 @@
         display: flex;
         flex-direction: column;
         gap: torem(22);
-        margin-top: torem(20);
-        padding-left: torem(22);
+        margin-top: torem(12);
+        padding-left: torem(32);
         list-style-type: disc;
 
         li {
@@ -143,6 +149,7 @@
           list-style-type: initial;
 
           &::marker {
+            font-size: torem(28);
             color: $mainColor;
           }
         }

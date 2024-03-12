@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: torem(8);
   padding: torem(13) torem(23);
   border-radius: 42px;
   background: $mainColor;
@@ -24,5 +25,14 @@
     background: $white;
     font-size: $md;
     color: $mainColor;
+
+    &--icon {
+      padding-left: torem(14);
+
+      img {
+        width: torem(28);
+        height: torem(28);
+      }
+    }
   }
 }

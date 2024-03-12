@@ -5,18 +5,20 @@
     flex-wrap: wrap;
     gap: torem(5);
     margin: 0;
-    padding: torem(37) 0 torem(30);
+    padding: torem(15) 0 torem(60);
     list-style-type: none;
-    font-family: "Montserrat-Medium";
-    font-size: $xs;
-    color: $grey;
+    font-size: $sm;
 
     li {
       &:not(:last-child) {
         &::after {
-          content: "/";
+          content: ">";
           margin-left: torem(5);
         }
+      }
+
+      &:last-child {
+        color: $mainColor;
       }
     }
 

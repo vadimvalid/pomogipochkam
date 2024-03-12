@@ -43,3 +43,23 @@
   text-wrap: pretty;
   text-transform: uppercase;
 }
+
+@mixin articleList {
+  display: flex;
+  flex-direction: column;
+  gap: torem(22);
+  margin-top: torem(12);
+  padding-left: torem(32);
+  list-style-type: disc;
+
+  li {
+    font-family: "Open-sans regular";
+    line-height: 1.33;
+    list-style-type: initial;
+
+    &::marker {
+      font-size: torem(24);
+      color: $mainColor;
+    }
+  }
+}

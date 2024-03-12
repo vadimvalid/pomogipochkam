@@ -1,0 +1,162 @@
+.article {
+  .section {
+    font-size: $lg;
+    line-height: 1.33;
+
+    &.top {
+      padding: torem(55) 0 torem(48);
+      background: radial-gradient(
+          101.79% 48.18% at 52.92% 94.32%,
+          rgba(255, 255, 255, 0.3) 0%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        #4f4f4f;
+
+      h1 {
+        font-size: torem(36);
+        line-height: 1.14;
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+
+    &.article-text {
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: torem(32);
+      }
+    }
+
+    &.article-title--blue {
+      margin: torem(55) 0 torem(44);
+
+      h2 {
+        font-family: "Finlandica medium";
+        font-size: torem(31);
+        font-weight: 500;
+        line-height: 1.14;
+        color: $mainColor;
+        text-transform: uppercase;
+      }
+    }
+
+    &.article-box {
+      margin-bottom: torem(55);
+
+      .box {
+        @include sectionShadow;
+
+        display: flex;
+        align-items: center;
+        gap: torem(37);
+        padding: torem(31) torem(34);
+
+        &__image {
+          flex: 0 1 22%;
+        }
+
+        &__text {
+          flex: 1;
+        }
+      }
+    }
+
+    &.article-image-text {
+      margin-bottom: torem(32);
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        gap: torem(30);
+
+        .text {
+          font-family: "Open-sans bold";
+          font-size: torem(24);
+          line-height: 1.25;
+          color: $mainColor;
+        }
+      }
+
+      &--secondary {
+        margin-bottom: torem(55);
+
+        .wrapper {
+          .text {
+            color: $secondaryColor;
+          }
+        }
+      }
+
+      &--last {
+        margin: torem(55) 0 torem(46);
+      }
+    }
+
+    &.article-title--grey {
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: torem(20);
+      }
+
+      h2 {
+        width: 45%;
+        margin-top: torem(35);
+        font-family: "Finlandica medium";
+        font-size: torem(31);
+        font-weight: 500;
+        line-height: 1.14;
+        color: $black;
+        text-transform: uppercase;
+        opacity: 0.8;
+      }
+    }
+
+    &.article-list {
+      ol {
+        display: flex;
+        flex-direction: column;
+        gap: torem(20);
+        padding-left: 0;
+
+        li {
+          font-family: "Open-sans bold";
+        }
+
+        p {
+          margin-top: torem(30);
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: torem(22);
+        margin-top: torem(20);
+        padding-left: torem(22);
+        list-style-type: disc;
+
+        li {
+          font-family: "Open-sans regular";
+          line-height: 1.33;
+          list-style-type: initial;
+
+          &::marker {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+
+    &.article-paragraph {
+      margin-bottom: torem(46);
+    }
+
+    &.article-number {
+      margin-bottom: torem(66);
+      font-style: italic;
+      opacity: 0.5;
+    }
+  }
+}

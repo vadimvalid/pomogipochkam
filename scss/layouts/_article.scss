@@ -41,6 +41,19 @@
       }
     }
 
+    &.article-title--red {
+      margin: torem(55) 0 torem(44);
+
+      h2 {
+        font-family: "Finlandica medium";
+        font-size: torem(31);
+        font-weight: 500;
+        line-height: 1.14;
+        color: $red;
+        text-transform: uppercase;
+      }
+    }
+
     &.article-box {
       margin-bottom: torem(55);
 
@@ -201,6 +214,16 @@
       ul {
         @include articleList;
       }
+
+      &--red {
+        ul {
+          li {
+            &::marker {
+              color: $red;
+            }
+          }
+        }
+      }
     }
 
     &.article-paragraph {
@@ -265,6 +288,14 @@
               margin-left: -36px;
               font-family: "Open-sans bold";
             }
+          }
+        }
+      }
+
+      &.big {
+        .box {
+          &__image {
+            flex: 0 1 32%;
           }
         }
       }
@@ -488,6 +519,91 @@
 
             strong {
               display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--biopsiya {
+    .section {
+      &.top {
+        background: radial-gradient(
+            101.79% 48.18% at 52.92% 94.32%,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0) 100%
+          ),
+          #4358c0;
+
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: url("../images/article/article-biopsiya-1.webp") 62%
+            bottom/14% no-repeat;
+        }
+      }
+
+      &.article-subtitle {
+        color: $black;
+
+        &--blue {
+          color: $mainColor;
+        }
+      }
+
+      &.article-image-text {
+        margin-top: torem(32);
+
+        .wrapper {
+          .text {
+            font-family: "Open-sans regular";
+          }
+        }
+      }
+
+      &.article-number {
+        margin-top: torem(30);
+      }
+    }
+  }
+
+  &--money {
+    .section {
+      &.top {
+        padding: torem(30) 0;
+
+        &:before {
+          content: "";
+
+          background: url("../images/article/article-skolko-stoit.webp") 62%
+            bottom/14% no-repeat;
+        }
+
+        h1 {
+          width: 50%;
+        }
+      }
+
+      &.article-subtitle {
+        p {
+          strong {
+            display: block;
+          }
+        }
+      }
+
+      &.article-image-text {
+        &--secondary {
+          .wrapper {
+            .text {
+              font-family: "Open-sans bold";
             }
           }
         }

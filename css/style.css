@@ -528,6 +528,7 @@ h5 {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  max-width: 50.9375rem;
   font-size: 1.5rem;
   line-height: 1.25;
   text-align: center;
@@ -1241,6 +1242,17 @@ h5 {
   color: #4358c1;
   text-transform: uppercase;
 }
+.article .section.article-title--red {
+  margin: 3.4375rem 0 2.75rem;
+}
+.article .section.article-title--red h2 {
+  font-family: "Finlandica medium";
+  font-size: 1.9375rem;
+  font-weight: 500;
+  line-height: 1.14;
+  color: #e3483a;
+  text-transform: uppercase;
+}
 .article .section.article-box {
   margin-bottom: 3.4375rem;
 }
@@ -1403,6 +1415,9 @@ h5 {
   font-size: 1.5rem;
   color: #4358c1;
 }
+.article .section.article-list--red ul li::marker {
+  color: #e3483a;
+}
 .article .section.article-paragraph {
   margin-bottom: 2.875rem;
 }
@@ -1470,6 +1485,9 @@ h5 {
   margin-bottom: 0.9375rem;
   margin-left: -36px;
   font-family: "Open-sans bold";
+}
+.article .section.article-box-list.big .box__image {
+  flex: 0 1 32%;
 }
 .article .section.article-table {
   margin-bottom: 3.4375rem;
@@ -1600,6 +1618,50 @@ h5 {
 }
 .article--normi .section.article-image-text.last .text strong {
   display: block;
+}
+.article--biopsiya .section.top {
+  background: radial-gradient(101.79% 48.18% at 52.92% 94.32%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #4358c0;
+  position: relative;
+}
+.article--biopsiya .section.top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/article/article-biopsiya-1.webp") 62% bottom/14% no-repeat;
+}
+.article--biopsiya .section.article-subtitle {
+  color: #3d3d40;
+}
+.article--biopsiya .section.article-subtitle--blue {
+  color: #4358c1;
+}
+.article--biopsiya .section.article-image-text {
+  margin-top: 2rem;
+}
+.article--biopsiya .section.article-image-text .wrapper .text {
+  font-family: "Open-sans regular";
+}
+.article--biopsiya .section.article-number {
+  margin-top: 1.875rem;
+}
+.article--money .section.top {
+  padding: 1.875rem 0;
+}
+.article--money .section.top:before {
+  content: "";
+  background: url("../images/article/article-skolko-stoit.webp") 62% bottom/14% no-repeat;
+}
+.article--money .section.top h1 {
+  width: 50%;
+}
+.article--money .section.article-subtitle p strong {
+  display: block;
+}
+.article--money .section.article-image-text--secondary .wrapper .text {
+  font-family: "Open-sans bold";
 }
 
 .button {

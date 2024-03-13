@@ -311,10 +311,22 @@
             }
           }
 
-          &:hover {
+          &.active {
+            flex-grow: 2;
+
             &:after {
               height: 45%;
               background-position: right bottom;
+            }
+
+            .item__text {
+              display: flex;
+            }
+
+            h2 {
+              &:before {
+                width: 100%;
+              }
             }
           }
 

@@ -784,18 +784,6 @@ h5 {
   padding: 0.8125rem 1.4375rem;
   font-size: 0.8125rem;
 }
-.home .main__items .item:hover {
-  flex-grow: 2;
-}
-.home .main__items .item:hover:after {
-  background-position: left bottom;
-}
-.home .main__items .item:hover .item__text {
-  display: flex;
-}
-.home .main__items .item:hover h2:before {
-  width: 100%;
-}
 @media screen and (max-width: 767.98px) {
   .home .main__items .item {
     flex-direction: column;
@@ -812,9 +800,18 @@ h5 {
   .home .main__items .item:last-child:after {
     background-image: url("../images/main/home-3-mobile.webp");
   }
-  .home .main__items .item:hover:after {
+  .home .main__items .item.active {
+    flex-grow: 2;
+  }
+  .home .main__items .item.active:after {
     height: 45%;
     background-position: right bottom;
+  }
+  .home .main__items .item.active .item__text {
+    display: flex;
+  }
+  .home .main__items .item.active h2:before {
+    width: 100%;
   }
   .home .main__items .item h2, .home .main__items .item__text {
     width: 75%;

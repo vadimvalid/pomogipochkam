@@ -528,6 +528,10 @@ h5 {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-align: center;
+  color: #fff;
 }
 .section.knowledge .wrapper .buttons {
   display: flex;
@@ -1265,6 +1269,7 @@ h5 {
 }
 .article .section.article-image-text .wrapper .image {
   flex: 0 1 10%;
+  min-width: 5.5rem;
 }
 .article .section.article-image-text .wrapper .text {
   font-family: "Open-sans bold";
@@ -1281,6 +1286,9 @@ h5 {
 .article .section.article-image-text--last {
   margin: 3.4375rem 0 2.875rem;
 }
+.article .section.article-image-text--red .wrapper .text {
+  color: #e3483a;
+}
 .article .section.article-title--grey .container {
   display: flex;
   flex-direction: column;
@@ -1296,6 +1304,73 @@ h5 {
   color: #3d3d40;
   text-transform: uppercase;
   opacity: 0.8;
+}
+.article .section.article-title--grey--block .container {
+  display: flex;
+  gap: 1.25rem;
+}
+.article .section.article-title--grey--block .container h2 + p {
+  font-size: 1.5rem;
+}
+.article .section.article-title--grey--block .container h4 {
+  font-family: "Open-sans bold";
+  font-size: 1.125rem;
+}
+.article .section.article-title--grey--block .container ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  margin-top: 0.75rem;
+  padding-left: 2rem;
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style-type: decimal;
+}
+.article .section.article-title--grey--block .container ol li {
+  font-family: "Open-sans regular";
+  line-height: 1.33;
+  list-style-type: initial;
+}
+.article .section.article-title--grey--block .container ol li::marker {
+  font-size: 1.5rem;
+  color: #4358c1;
+}
+.article .section.article-title--grey--block .container ol li {
+  list-style-type: decimal;
+}
+.article .section.article-title--grey--block .container ol li::marker {
+  font-family: "Open-sans bold";
+  font-size: 1.125rem;
+}
+.article .section.article-title--grey--block .container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  margin-top: 0.75rem;
+  padding-left: 2rem;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.875rem;
+}
+.article .section.article-title--grey--block .container ul li {
+  font-family: "Open-sans regular";
+  line-height: 1.33;
+  list-style-type: initial;
+}
+.article .section.article-title--grey--block .container ul li::marker {
+  font-size: 1.5rem;
+  color: #4358c1;
+}
+.article .section.article-title--grey--block .container ul p {
+  margin-left: -36px;
+}
+.article .section.article-list .container > p {
+  margin: 1.875rem 0;
+  font-family: "Open-sans bold";
+  font-size: 1.125rem;
 }
 .article .section.article-list ol {
   display: flex;
@@ -1396,6 +1471,44 @@ h5 {
   margin-left: -36px;
   font-family: "Open-sans bold";
 }
+.article .section.article-table {
+  margin-bottom: 3.4375rem;
+}
+.article .section.article-table .wrapper {
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.9375rem 2.125rem;
+}
+.article .section.article-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.article .section.article-table table td,
+.article .section.article-table table th {
+  border: 1px solid #bcbcbc;
+  padding: 0.9375rem;
+}
+.article .section.article-table table th {
+  background: #e1e5e4;
+  font-family: "Open-sans bold";
+}
+.article .section.article-table table tr td:nth-child(3), .article .section.article-table table tr td:nth-child(4) {
+  width: 15%;
+  text-align: center;
+}
+.article .section.article-table table tr td a {
+  display: block;
+  font-family: "Open-sans bold";
+  color: #4358c1;
+}
+.article .section.article-table--second table tr td:nth-child(2), .article .section.article-table--second table tr td:nth-child(3) {
+  width: auto;
+  text-align: center;
+}
+.article .section.article-table--second table tr td:nth-child(4) {
+  width: 35%;
+}
 .article--mocha .section.top {
   position: relative;
 }
@@ -1429,6 +1542,64 @@ h5 {
 }
 .article--creatine .section.article-image-text--secondary {
   margin-top: 2.75rem;
+}
+.article--drugie .section.top {
+  background: radial-gradient(101.79% 48.18% at 52.92% 94.32%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #db790f;
+  position: relative;
+}
+.article--drugie .section.top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/article/top-1-1.webp"), url("../images/article/top-1-2.webp");
+  background-position: 62% bottom, 66% bottom;
+  background-repeat: no-repeat;
+  background-size: 8.125rem 6.25rem;
+}
+.article--drugie .section.article-subtitle {
+  font-family: "Open-sans regular";
+  color: #3d3d40;
+}
+.article--drugie .section.article-title--blue {
+  margin-bottom: 2.1875rem;
+}
+.article--drugie .section.article-image-text--secondary {
+  margin-top: 2.75rem;
+}
+.article--normi .section.top {
+  background: radial-gradient(101.79% 48.18% at 52.92% 94.32%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #828282;
+  position: relative;
+}
+.article--normi .section.top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/article/top-1-2.webp") 72% bottom/5% no-repeat, url("../images/article/article-normi-1.webp") 68% bottom/4% no-repeat;
+}
+.article--normi .section.article-title--blue.first {
+  margin-top: 0;
+}
+.article--normi .section.article-image-text--red {
+  margin-top: 2.9375rem;
+  margin-bottom: 3.4375rem;
+}
+.article--normi .section.article-title--grey h2 {
+  width: 100%;
+}
+.article--normi .section.article-image-text.last {
+  margin-top: 2.75rem;
+}
+.article--normi .section.article-image-text.last .text {
+  font-family: "Open-sans regular";
+}
+.article--normi .section.article-image-text.last .text strong {
+  display: block;
 }
 
 .button {

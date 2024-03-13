@@ -28,6 +28,14 @@
             line-height: 1.2;
             color: $mainColor;
           }
+
+          &.inactive {
+            opacity: 0.2;
+
+            a {
+              cursor: not-allowed;
+            }
+          }
         }
       }
     }

@@ -73,6 +73,88 @@
           flex: 1;
         }
       }
+
+      &--blue {
+        margin-top: torem(44);
+
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: torem(55);
+          padding: torem(31) torem(34);
+          border-radius: 18px;
+          background: $mainColor;
+          box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
+          color: $white;
+
+          h2 {
+            font-family: "Finlandica medium";
+            font-size: torem(31);
+            line-height: 1.14;
+            font-weight: 500;
+            color: $white;
+            text-transform: uppercase;
+          }
+
+          &__items {
+            display: flex;
+            flex-direction: column;
+            gap: torem(20);
+            font-family: "Open-sans bold";
+            font-size: torem(18);
+            line-height: 1.33;
+
+            .item {
+              display: flex;
+              align-items: center;
+              gap: torem(37);
+
+              img {
+                flex: 0 1 10%;
+                width: torem(80);
+                object-fit: contain;
+              }
+            }
+          }
+
+          &__buttons {
+            display: flex;
+            gap: torem(26);
+          }
+
+          &__list {
+            @include articleList;
+
+            gap: 0;
+
+            li {
+              &:not(:last-child) {
+                margin-bottom: torem(22);
+              }
+
+              &::marker {
+                color: #f7a54c;
+              }
+            }
+
+            p {
+              margin-bottom: torem(15);
+              margin-left: -36px;
+              font-family: "Open-sans bold";
+            }
+          }
+        }
+
+        &.narrow {
+          margin-bottom: torem(44);
+
+          .wrapper {
+            gap: torem(33);
+            padding: torem(31) torem(34) torem(55);
+          }
+        }
+      }
     }
 
     &.article-image-text {
@@ -419,6 +501,12 @@
 
       &.article-image-text--secondary {
         margin-top: torem(44);
+      }
+
+      &.article-title--grey {
+        h2 {
+          width: 50%;
+        }
       }
     }
   }

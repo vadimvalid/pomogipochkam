@@ -11,22 +11,6 @@
       &__items {
         display: flex;
         flex-direction: column;
-
-        &:last-child {
-          flex-direction: row;
-          align-items: flex-start;
-          gap: torem(20);
-          font-family: "Open-sans regular";
-          font-size: $lg;
-          font-style: italic;
-          line-height: 1.22;
-          text-wrap: pretty;
-
-          .button {
-            flex: 0 1 26%;
-            font-style: normal;
-          }
-        }
       }
 
       .table__item {

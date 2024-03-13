@@ -15,9 +15,18 @@
 
   &--secondary {
     padding: torem(16) torem(27);
-    background: $secondaryColor;
+    background: #f7a54c;
     font-size: $md;
     color: $white;
+
+    &--icon {
+      padding: torem(16) torem(52);
+
+      img {
+        width: torem(28);
+        height: torem(28);
+      }
+    }
   }
 
   &--white {
@@ -34,5 +43,11 @@
         height: torem(28);
       }
     }
+  }
+
+  &--red {
+    background: $red;
+    color: $white;
+    font-size: torem(24);
   }
 }

@@ -85,6 +85,39 @@
       color: $white;
       text-align: center;
     }
+
+    @include sm-breakpoint {
+      padding: torem(36) 0;
+
+      .wrapper {
+        gap: torem(50);
+      }
+
+      .items {
+        flex-direction: column;
+        gap: torem(46);
+
+        .item {
+          gap: torem(20);
+          font-size: $md;
+
+          h3 {
+            font-size: torem(18);
+          }
+
+          &__title {
+            display: flex;
+            flex-direction: column;
+            gap: torem(8);
+          }
+        }
+      }
+
+      .subtitle {
+        width: 100%;
+        font-size: $lg;
+      }
+    }
   }
 }
 
@@ -228,6 +261,10 @@
                 &::marker {
                   color: $black;
                 }
+
+                a {
+                  color: $black;
+                }
               }
             }
           }
@@ -257,6 +294,10 @@
 
               &::marker {
                 font-size: torem(16);
+                color: $white;
+              }
+
+              a {
                 color: $white;
               }
             }

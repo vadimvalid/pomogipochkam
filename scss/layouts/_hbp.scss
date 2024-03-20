@@ -52,6 +52,31 @@
           font-style: normal;
         }
       }
+
+      @include sm-breakpoint {
+        gap: torem(20);
+        padding: torem(24) torem(26);
+
+        h2 {
+          font-size: torem(20);
+        }
+
+        .items {
+          grid-template-columns: repeat(2, 1fr);
+          gap: torem(20);
+          padding-bottom: torem(34);
+          font-size: $md;
+        }
+
+        &__items {
+          gap: torem(16);
+          font-size: $md;
+
+          .button {
+            flex: 0 1 26%;
+          }
+        }
+      }
     }
   }
 }

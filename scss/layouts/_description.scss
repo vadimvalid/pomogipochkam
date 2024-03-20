@@ -25,5 +25,16 @@
         gap: torem(20);
       }
     }
+
+    @include sm-breakpoint {
+      padding: torem(30) 0 torem(50);
+
+      .wrapper {
+        flex-direction: column;
+        gap: torem(30);
+        padding: torem(24) torem(16) torem(16) torem(16);
+        font-size: $sm;
+      }
+    }
   }
 }

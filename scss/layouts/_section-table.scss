@@ -67,6 +67,36 @@
           }
         }
       }
+
+      @include sm-breakpoint {
+        gap: torem(20);
+        padding: torem(20) torem(24);
+        overflow-x: auto;
+
+        .table__item {
+          gap: torem(20);
+          padding: torem(25) 0;
+
+          h3 {
+            font-size: $md;
+          }
+
+          .item {
+            gap: torem(10);
+            font-size: $sm;
+
+            picture,
+            img {
+              width: torem(50);
+              height: torem(62);
+            }
+
+            &:nth-child(2) {
+              gap: torem(16);
+            }
+          }
+        }
+      }
     }
   }
 }

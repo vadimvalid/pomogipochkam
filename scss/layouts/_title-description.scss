@@ -121,8 +121,113 @@
       }
     }
   }
+
+  @include sm-breakpoint {
+    padding: torem(24) 0 torem(5);
+
+    .wrapper {
+      h2 {
+        width: 100%;
+        margin: torem(20) 0;
+        font-size: $lg;
+      }
+
+      > p {
+        margin-bottom: torem(24);
+        font-size: $md;
+      }
+
+      .block {
+        gap: torem(16);
+        padding: torem(24) torem(28);
+
+        &__content {
+          flex-direction: column-reverse;
+          gap: torem(20);
+          padding-bottom: torem(20);
+
+          h3 {
+            font-size: $lg;
+          }
+
+          p {
+            font-size: $md;
+          }
+
+          ul {
+            gap: torem(10);
+            padding-left: torem(20);
+
+            p {
+              margin-left: torem(-26);
+            }
+
+            li {
+              font-size: $md;
+              line-height: 1.25;
+              list-style-type: initial;
+
+              &::marker {
+                font-size: torem(18);
+                color: $red;
+              }
+            }
+          }
+
+          .item {
+            &:first-child {
+              flex: 0 1 100%;
+              gap: torem(20);
+            }
+
+            &:last-child {
+              flex: 0 1 100%;
+              padding-top: torem(18);
+            }
+          }
+
+          &--images {
+            flex-direction: column;
+
+            .item {
+              &:first-child {
+                flex: 0 1 100%;
+              }
+
+              &:last-child {
+                flex: 0 1 100%;
+                align-items: center;
+                gap: torem(10);
+
+                img {
+                  max-width: torem(50);
+
+                  &:nth-child(even) {
+                    max-width: torem(20);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &__bottom {
+          gap: torem(10);
+          font-size: $md;
+
+          .button {
+            flex: 0 1 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 .title-description:has(+ .info) {
   padding-bottom: torem(66);
+
+  @include sm-breakpoint {
+    padding-bottom: torem(44);
+  }
 }

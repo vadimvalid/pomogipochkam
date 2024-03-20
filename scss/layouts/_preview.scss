@@ -17,5 +17,16 @@
       color: $mainColor;
       text-transform: uppercase;
     }
+
+    @include sm-breakpoint {
+      flex-direction: column;
+      gap: torem(20);
+      padding-top: torem(40);
+      font-size: torem(16);
+
+      h2 {
+        font-size: $lg;
+      }
+    }
   }
 }

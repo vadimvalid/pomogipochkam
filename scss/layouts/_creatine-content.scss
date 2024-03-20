@@ -55,5 +55,32 @@
         }
       }
     }
+
+    @include sm-breakpoint {
+      flex-direction: column;
+      gap: torem(40);
+
+      .item {
+        flex: 0 1 100%;
+        font-size: $sm;
+
+        &:first-child {
+          gap: torem(16);
+        }
+
+        &:last-child {
+          gap: torem(14) torem(18);
+        }
+
+        &__row {
+          gap: torem(16);
+          width: 100%;
+
+          &:last-child {
+            font-size: $sm;
+          }
+        }
+      }
+    }
   }
 }

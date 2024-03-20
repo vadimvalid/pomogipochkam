@@ -46,6 +46,37 @@
           }
         }
       }
+
+      @include sm-breakpoint {
+        flex-direction: column;
+        gap: torem(24);
+        padding: torem(40) 0 torem(48);
+
+        .item {
+          gap: torem(20);
+          font-size: $md;
+
+          &:first-child {
+            flex: 0 1 100%;
+          }
+
+          &:last-child {
+            font-size: torem(25);
+
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: -12px;
+              left: 50%;
+              width: 56%;
+              height: 2px;
+              background: $secondaryColor;
+              border-radius: 57px;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
     }
   }
 }

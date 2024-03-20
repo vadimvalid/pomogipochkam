@@ -63,4 +63,12 @@
       border-radius: 6px;
     }
   }
+
+  @include sm-breakpoint {
+    .wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: torem(20);
+    }
+  }
 }

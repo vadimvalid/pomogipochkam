@@ -30,6 +30,7 @@
         line-height: 1.14;
         text-transform: uppercase;
         color: $white;
+        text-align: center;
       }
     }
 
@@ -85,6 +86,57 @@
               &::marker {
                 font-size: torem(24);
                 color: $green;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include sm-breakpoint {
+      padding: torem(40) torem(30);
+
+      .wrapper {
+        flex-direction: column;
+        gap: torem(30);
+
+        h2 {
+          font-size: $xl;
+        }
+      }
+
+      .info {
+        &__content {
+          flex-direction: column;
+          gap: torem(40);
+
+          &__image {
+            flex: 0 1 30%;
+          }
+
+          &__text {
+            flex: 0 1 70%;
+
+            gap: torem(15);
+
+            > p {
+              font-size: $lg;
+            }
+
+            h4 {
+              font-size: $md;
+            }
+
+            ul {
+              gap: torem(10);
+              padding-left: torem(24);
+
+              li {
+                font-size: $lg;
+
+                &::marker {
+                  font-size: torem(18);
+                }
               }
             }
           }

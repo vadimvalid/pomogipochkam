@@ -39,5 +39,28 @@
         }
       }
     }
+
+    @include sm-breakpoint {
+      padding: torem(40) 0;
+
+      .wrapper {
+        gap: torem(30);
+
+        .items {
+          grid-template-columns: 1fr;
+          grid-row-gap: torem(20);
+
+          .item {
+            a {
+              padding: torem(31) torem(34);
+              font-family: "Open-sans bold";
+              font-size: torem(20);
+              line-height: 1.2;
+              color: $mainColor;
+            }
+          }
+        }
+      }
+    }
   }
 }

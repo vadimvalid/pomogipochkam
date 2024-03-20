@@ -31,5 +31,32 @@
         }
       }
     }
+
+    @include sm-breakpoint {
+      padding: torem(40) 0;
+
+      .wrapper {
+        flex-direction: column;
+        gap: torem(4) torem(16);
+        width: 100%;
+
+        .item {
+          flex: 0 1 100%;
+
+          gap: torem(20);
+          padding: torem(16) torem(30) torem(16) 0;
+
+          img {
+            width: torem(52);
+            height: torem(58);
+            object-fit: contain;
+          }
+
+          a {
+            font-size: $md;
+          }
+        }
+      }
+    }
   }
 }

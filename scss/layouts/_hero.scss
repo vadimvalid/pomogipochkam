@@ -25,24 +25,26 @@
   }
 
   h1 {
+    position: relative;
     width: 55%;
     margin: 0;
     font-size: torem(45);
     line-height: 1.2;
     color: $white;
     text-transform: uppercase;
+    z-index: 5;
   }
 
   @include sm-breakpoint {
-    padding: torem(90) 0 torem(88);
+    padding: torem(60) 0 torem(80);
 
     h1 {
       width: 100%;
+      font-size: torem(36);
     }
 
     &:after {
-      height: 60%;
-
+      height: 50%;
       background-position: right bottom;
     }
   }

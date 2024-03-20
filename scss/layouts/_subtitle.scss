@@ -15,5 +15,17 @@
     &.creatine {
       padding: torem(58) 0 torem(44);
     }
+
+    @include sm-breakpoint {
+      padding: torem(40) 0;
+
+      .wrapper {
+        width: 100%;
+      }
+
+      &.creatine {
+        padding: torem(40) 0 torem(24);
+      }
+    }
   }
 }

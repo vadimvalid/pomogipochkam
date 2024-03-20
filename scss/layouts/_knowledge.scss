@@ -61,5 +61,35 @@
       text-transform: uppercase;
       color: $mainColor;
     }
+
+    @include sm-breakpoint {
+      padding: torem(36) 0;
+
+      .wrapper {
+        gap: torem(20);
+
+        .text {
+          max-width: unset;
+          font-size: torem(18);
+        }
+
+        .buttons {
+          gap: torem(18);
+        }
+
+        .more {
+          gap: torem(10);
+          font-size: $sm;
+
+          p {
+            max-width: unset;
+          }
+        }
+      }
+
+      h2 {
+        font-size: $lg;
+      }
+    }
   }
 }

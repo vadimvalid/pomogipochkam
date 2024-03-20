@@ -11,6 +11,7 @@
   font-size: torem(13);
   line-height: 1.37;
   color: $white;
+  text-align: center;
   cursor: pointer;
 
   &--secondary {
@@ -49,5 +50,41 @@
     background: $red;
     color: $white;
     font-size: torem(24);
+  }
+
+  @include sm-breakpoint {
+    padding: torem(10) torem(16);
+
+    &--secondary {
+      padding: torem(10) torem(16);
+      font-size: $sm;
+
+      &--icon {
+        padding: torem(12) torem(40);
+
+        img {
+          width: torem(20);
+          height: torem(20);
+        }
+      }
+    }
+
+    &--white {
+      padding: torem(10) torem(16);
+      font-size: $sm;
+
+      &--icon {
+        padding-left: torem(10);
+
+        img {
+          width: torem(20);
+          height: torem(20);
+        }
+      }
+    }
+
+    &--red {
+      font-size: $lg;
+    }
   }
 }

@@ -27,6 +27,10 @@
       display: flex;
       flex-direction: column;
       gap: torem(6);
+
+      a {
+        color: $white;
+      }
     }
   }
 }

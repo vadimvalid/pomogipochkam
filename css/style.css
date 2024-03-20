@@ -1037,6 +1037,9 @@ h5 {
   color: #4358c1;
   text-align: center;
 }
+.home .main__bottom p {
+  margin-top: 0.625rem;
+}
 @media screen and (max-width: 767.98px) {
   .home .main__bottom {
     padding: 2.375rem 2.5625rem 2.6875rem;

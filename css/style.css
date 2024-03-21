@@ -288,6 +288,16 @@ h5 {
 .footer .wrapper .item:first-child {
   max-width: 17.8125rem;
 }
+.footer .wrapper .item:last-child {
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767.98px) {
+  .footer .wrapper .item:last-child {
+    align-items: flex-start;
+  }
+}
 .footer .wrapper ul {
   display: flex;
   flex-direction: column;

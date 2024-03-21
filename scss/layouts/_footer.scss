@@ -21,6 +21,16 @@
       &:first-child {
         max-width: torem(285);
       }
+
+      &:last-child {
+        flex: 1;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        @include sm-breakpoint {
+          align-items: flex-start;
+        }
+      }
     }
 
     ul {

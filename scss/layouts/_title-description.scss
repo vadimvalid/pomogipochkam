@@ -15,6 +15,10 @@
       font-weight: 500;
       opacity: 0.8;
       text-transform: uppercase;
+
+      span {
+        text-transform: lowercase;
+      }
     }
 
     > p {

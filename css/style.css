@@ -1329,6 +1329,9 @@ h5 {
   opacity: 0.8;
   text-transform: uppercase;
 }
+.title-description .wrapper h2 span {
+  text-transform: lowercase;
+}
 .title-description .wrapper > p {
   margin-bottom: 2.5rem;
   font-size: 1.25rem;

@@ -1034,11 +1034,17 @@ h5 {
 }
 .home .main__bottom {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 2.5rem clamp(2.5625rem, 5vw, 6.25rem) 2.0625rem;
   background: #fff;
   font-family: "Open-sans regular";
+}
+.home .main__bottom .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .main__bottom .item:first-child {
+  flex: 1;
 }
 .home .main__bottom h1 {
   font-size: clamp(1.9375rem, 5vw, 2.125rem);
@@ -1052,6 +1058,8 @@ h5 {
 }
 @media screen and (max-width: 767.98px) {
   .home .main__bottom {
+    flex-direction: column;
+    gap: 1.25rem;
     padding: 2.375rem 2.5625rem 2.6875rem;
   }
 }

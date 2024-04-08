@@ -24,6 +24,12 @@
       gap: torem(10) clamp(torem(36), 5vw, torem(76));
 
       li {
+        font-size: $sm;
+        line-height: 1.37;
+        color: $black;
+        letter-spacing: 0.2px;
+        transition: all 0.3s ease;
+
         a {
           font-size: $sm;
           line-height: 1.37;
@@ -41,6 +47,10 @@
           a {
             color: $secondaryColor;
           }
+        }
+
+        &.disabled {
+          opacity: 0.5;
         }
       }
     }

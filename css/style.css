@@ -502,6 +502,11 @@ h5 {
     gap: 0.625rem;
     font-size: 0.875rem;
   }
+  .section.table .wrapper .table__item .item:first-child {
+    flex: 0 1 25%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .section.table .wrapper .table__item .item picture,
   .section.table .wrapper .table__item .item img {
     width: 3.125rem;
@@ -1059,6 +1064,11 @@ h5 {
 }
 .home .main__bottom .item:first-child {
   flex: 1;
+}
+@media screen and (max-width: 767.98px) {
+  .home .main__bottom .item {
+    gap: 0.875rem;
+  }
 }
 .home .main__bottom h1 {
   font-size: clamp(1.9375rem, 5vw, 2.125rem);
@@ -1797,8 +1807,9 @@ h5 {
 }
 .article .section.article-box--blue .wrapper__list li {
   font-family: "Open-sans regular";
-  line-height: 1.33;
   list-style-type: initial;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 .article .section.article-box--blue .wrapper__list li::marker {
   font-size: 1.5rem;
@@ -1977,8 +1988,9 @@ h5 {
 }
 .article .section.article-title--grey--block .container ol li {
   font-family: "Open-sans regular";
-  line-height: 1.33;
   list-style-type: initial;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 .article .section.article-title--grey--block .container ol li::marker {
   font-size: 1.5rem;
@@ -2005,8 +2017,9 @@ h5 {
 }
 .article .section.article-title--grey--block .container ul li {
   font-family: "Open-sans regular";
-  line-height: 1.33;
   list-style-type: initial;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 .article .section.article-title--grey--block .container ul li::marker {
   font-size: 1.5rem;
@@ -2078,8 +2091,9 @@ h5 {
 }
 .article .section.article-list ul li {
   font-family: "Open-sans regular";
-  line-height: 1.33;
   list-style-type: initial;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 .article .section.article-list ul li::marker {
   font-size: 1.5rem;
@@ -2171,8 +2185,9 @@ h5 {
 }
 .article .section.article-box-list .box__content ul li {
   font-family: "Open-sans regular";
-  line-height: 1.33;
   list-style-type: initial;
+  overflow-wrap: break-word;
+  text-wrap: balance;
 }
 .article .section.article-box-list .box__content ul li::marker {
   font-size: 1.5rem;

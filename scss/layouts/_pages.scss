@@ -400,6 +400,10 @@
         &:first-child {
           flex: 1;
         }
+
+        @include sm-breakpoint {
+          gap: torem(14);
+        }
       }
 
       h1 {

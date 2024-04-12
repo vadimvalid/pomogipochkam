@@ -58,8 +58,9 @@
 
   li {
     font-family: "Open-sans regular";
-    line-height: 1.33;
     list-style-type: initial;
+    overflow-wrap: break-word;
+    text-wrap: balance;
 
     &::marker {
       font-size: torem(24);

@@ -85,6 +85,12 @@
             gap: torem(10);
             font-size: $sm;
 
+            &:first-child {
+              flex: 0 1 25%;
+              flex-direction: column;
+              align-items: flex-start;
+            }
+
             picture,
             img {
               width: torem(50);

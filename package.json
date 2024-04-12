@@ -1,15 +1,10 @@
 {
-  "name": "front-ibby",
+  "name": "pomogipochkam",
   "version": "1.0.0",
   "description": "Starting template for building layout",
   "main": "script.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://ibbykov@bitbucket.org/ibbykov/front-ibby.git"
-  },
-  "author": "ibby",
+  "author": "Vadim",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ibbykov/front-ibby#readme",
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
@@ -39,10 +34,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0"
-  },
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "popper.js": "^1.16.1"
   },
   "browserslist": [
     "last 1 version",

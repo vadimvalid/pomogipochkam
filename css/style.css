@@ -2444,7 +2444,7 @@ h5 {
 }
 
 .section.tg {
-  background: #BEC8F9;
+  background: linear-gradient(90deg, rgb(189, 199, 249) 0%, rgb(71, 92, 195) 100%);
 }
 .section.tg .wrapper {
   display: flex;

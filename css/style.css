@@ -1052,7 +1052,6 @@ h5 {
   }
 }
 .home .main__bottom {
-  display: flex;
   padding: 2.5rem clamp(2.5625rem, 5vw, 6.25rem) 2.0625rem;
   background: #fff;
   font-family: "Open-sans regular";
@@ -1061,14 +1060,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.home .main__bottom .item:first-child {
-  flex: 1;
-}
-@media screen and (max-width: 767.98px) {
-  .home .main__bottom .item {
-    gap: 0.875rem;
-  }
+  gap: 0.875rem;
 }
 .home .main__bottom h1 {
   font-size: clamp(1.9375rem, 5vw, 2.125rem);
@@ -1078,7 +1070,7 @@ h5 {
   text-align: center;
 }
 .home .main__bottom p {
-  margin-top: 0.625rem;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 767.98px) {
   .home .main__bottom {

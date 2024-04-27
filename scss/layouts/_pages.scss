@@ -387,7 +387,6 @@
     }
 
     &__bottom {
-      display: flex;
       padding: torem(40) clamp(torem(41), 5vw, torem(100)) torem(33);
       background: $white;
       font-family: "Open-sans regular";
@@ -396,14 +395,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        &:first-child {
-          flex: 1;
-        }
-
-        @include sm-breakpoint {
-          gap: torem(14);
-        }
+        gap: torem(14);
       }
 
       h1 {
@@ -415,7 +407,7 @@
       }
 
       p {
-        margin-top: torem(10);
+        margin-top: torem(16);
       }
 
       @include sm-breakpoint {

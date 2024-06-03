@@ -38,6 +38,19 @@
         flex-direction: column;
         gap: torem(32);
 
+        .item {
+          display: flex;
+          flex-direction: column;
+          font-size: $lg;
+
+          ul {
+            li {
+              list-style: initial;
+              margin-left: torem(20);
+            }
+          }
+        }
+
         @include sm-breakpoint {
           gap: torem(20);
         }
@@ -56,11 +69,21 @@
         text-transform: uppercase;
       }
 
+      p {
+        margin-top: torem(16);
+        font-size: $md;
+      }
+
       @include sm-breakpoint {
         margin: torem(44) 0 torem(38);
 
         h2 {
           font-size: torem(26);
+        }
+
+        p {
+          margin-top: torem(10);
+          font-size: $sm;
         }
       }
     }
@@ -75,6 +98,35 @@
         line-height: 1.14;
         color: $red;
         text-transform: uppercase;
+      }
+
+      @include sm-breakpoint {
+        margin: torem(44) 0 torem(38);
+
+        h2 {
+          font-size: torem(26);
+        }
+      }
+    }
+
+    &.article-title--orange {
+      margin: torem(55) 0 torem(44);
+
+      h2 {
+        font-family: "Finlandica medium";
+        font-size: torem(31);
+        font-weight: 500;
+        line-height: 1.14;
+        color: $secondaryColor;
+        text-transform: uppercase;
+      }
+
+      &.image {
+        .container {
+          display: flex;
+          align-items: center;
+          gap: torem(20);
+        }
       }
 
       @include sm-breakpoint {
@@ -1004,6 +1056,288 @@
           }
         }
       }
+    }
+  }
+
+  &--priznaki {
+    padding: torem(30) 0;
+
+    h2 {
+      margin-bottom: torem(20);
+      font-family: "Finlandica medium";
+      font-size: 1.9375rem;
+      font-weight: 500;
+      line-height: 1.14;
+      color: #4358c1;
+      text-transform: uppercase;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: torem(40) torem(30);
+      background: linear-gradient(45deg, #4358c1 0%, #a0aef7 100%);
+      border-radius: 10px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        gap: torem(20);
+
+        &:not(:last-child) {
+          padding-bottom: torem(30);
+          border-bottom: 1px solid $white;
+        }
+
+        h3 {
+          flex: 0 1 15%;
+          font-family: "Finlandica BOLD", sans-serif;
+          font-size: torem(24);
+          color: $white;
+          text-transform: capitalize;
+        }
+
+        ul {
+          @include articleList;
+
+          flex: 0 1 85%;
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+
+          li {
+            color: $white;
+            line-height: 1.1;
+            text-transform: uppercase;
+
+            &::marker {
+              color: $white;
+            }
+          }
+        }
+
+        @include sm-breakpoint {
+          flex-direction: column;
+          align-items: flex-start;
+          padding-top: torem(20);
+
+          h3,
+          ul {
+            flex: none;
+          }
+        }
+      }
+    }
+
+    .container {
+      > p {
+        margin-top: torem(10);
+        padding: 0 torem(20);
+        font-size: torem(20);
+      }
+    }
+  }
+
+  &--two-columns {
+    .wrapper {
+      display: flex;
+      gap: torem(100);
+      padding: torem(40) torem(50);
+      background: $white;
+      border-radius: 20px;
+      box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
+
+      .item {
+        flex: 1;
+      }
+
+      h3 {
+        font-family: "Open-sans regular", sans-serif;
+        font-size: $md;
+        color: $mainColor;
+      }
+
+      ul {
+        @include articleList;
+
+        display: flex;
+        flex-direction: column;
+
+        li {
+          font-size: $md;
+          line-height: 1.1;
+
+          &::marker {
+            font-size: $md;
+          }
+        }
+      }
+
+      @include sm-breakpoint {
+        flex-direction: column;
+        gap: torem(40);
+      }
+    }
+  }
+
+  &--scale {
+    .wrapper {
+      padding: torem(26) torem(32);
+      background: $white;
+      border-radius: 20px;
+      box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: torem(47);
+        border: 1px solid #888;
+        text-align: center;
+
+        > p {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          font-size: $md;
+
+          &:not(:last-child) {
+            border-right: 1px solid #888;
+            font-family: "Open-sans regular", sans-serif;
+          }
+
+          &:first-child {
+            flex: 0 1 20%;
+            font-family: "Finlandica BOLD", sans-serif;
+            text-transform: uppercase;
+          }
+
+          &:last-child {
+            flex: 0 1 30%;
+          }
+        }
+
+        @include sm-breakpoint {
+          height: torem(52);
+
+          > p {
+            font-size: $sm;
+          }
+        }
+
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}) {
+            background: darken(#ffd977, $i * 5%);
+          }
+        }
+      }
+    }
+  }
+
+  &.zabolevaniya-1 {
+    .article-table {
+      margin-bottom: torem(55);
+
+      .wrapper {
+        @include sectionShadow;
+        padding: torem(31) torem(34);
+        overflow-x: auto;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        text-transform: uppercase;
+
+        td,
+        th {
+          border: none;
+          border-right: 1px solid #000;
+          border-bottom: 1px solid #000;
+          padding: torem(25);
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+
+        th {
+          padding-top: 0;
+          background: transparent;
+          font-family: "Finlandica BOLD", sans-serif;
+          font-size: torem(24);
+        }
+
+        tr {
+          td {
+            &:nth-child(3),
+            &:nth-child(4) {
+              width: 15%;
+              text-align: center;
+            }
+
+            a {
+              display: block;
+              font-family: "Open-sans bold";
+              color: $mainColor;
+            }
+          }
+
+          th {
+            &:first-child {
+              padding-left: torem(10);
+            }
+          }
+
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(5) {
+            td {
+              &:first-child {
+                padding-left: torem(10);
+                font-family: "Finlandica BOLD", sans-serif;
+                font-size: torem(15);
+              }
+            }
+          }
+
+          &:nth-child(5) {
+            td {
+              border-bottom: none;
+            }
+          }
+
+          &:last-child {
+            td {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+
+      &--second {
+        table {
+          tr {
+            td {
+              &:nth-child(2),
+              &:nth-child(3) {
+                width: auto;
+                text-align: center;
+              }
+
+              &:nth-child(4) {
+                width: 35%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .article-text {
+      margin-bottom: torem(50);
     }
   }
 }

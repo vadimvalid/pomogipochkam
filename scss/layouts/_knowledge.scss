@@ -62,6 +62,11 @@
       color: $mainColor;
     }
 
+    p {
+      font-family: "Open-sans regular", sans-serif;
+      font-size: torem(24);
+    }
+
     @include sm-breakpoint {
       padding: torem(36) 0;
 

@@ -204,6 +204,10 @@ h5 {
   overflow-x: hidden;
 }
 
+.mt-20 {
+  margin-top: 1.25rem;
+}
+
 .header {
   padding: 1.625rem 0 1.4375rem;
 }
@@ -1745,7 +1749,16 @@ h5 {
 }
 .article .section.article-title--blue p {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.125rem;
+}
+.article .section.article-title--blue .title {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.article .section.article-title--blue .title img {
+  width: 3.875rem;
+  height: 4.25rem;
 }
 @media screen and (max-width: 767.98px) {
   .article .section.article-title--blue {
@@ -2177,6 +2190,9 @@ h5 {
 }
 .article .section.article-list--red ul li::marker {
   color: #e3483a;
+}
+.article .section.article-list--orange ul li::marker {
+  color: #db790f;
 }
 .article .section.article-list .text {
   margin-top: 1.25rem;
@@ -2803,6 +2819,7 @@ h5 {
   background: linear-gradient(45deg, #4358c1 0%, #a0aef7 100%);
   font-size: 1.125rem;
   color: #fff;
+  font-family: "Open-sans regular", sans-serif;
 }
 .article--bg-blue .title {
   display: flex;
@@ -2843,10 +2860,51 @@ h5 {
 .article--bg-blue.image .right {
   flex: 0 1 35%;
 }
+.article--bg-blue .item p {
+  line-height: 1.4;
+}
+.article--bg-blue .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-top: 0.625rem;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+.article--bg-blue .item ul li {
+  list-style-type: initial;
+}
+.article--bg-blue .item:first-child {
+  padding-bottom: 1.875rem;
+  border-bottom: 1px solid #fff;
+}
+.article--bg-blue .item:last-child {
+  padding-top: 1.875rem;
+}
 @media screen and (max-width: 767.98px) {
   .article--bg-blue {
     padding: 1.25rem 1.875rem;
   }
+}
+.article--blue-bold-text {
+  margin-top: 3.125rem;
+}
+.article--blue-bold-text .container p,
+.article--blue-bold-text .container li {
+  font-family: "Open-sans bold", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  color: #4358c1;
+}
+.article--blue-bold-text .container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+.article--blue-bold-text .container ul li {
+  list-style-type: initial;
 }
 
 .section.tg {
@@ -2961,6 +3019,20 @@ h5 {
 }
 .tabs .container > p.thin {
   font-family: "Open-sans regular";
+}
+.tabs--simptoms > div [role=tabpanel] > p {
+  font-size: 1rem;
+}
+.tabs--simptoms > div [role=tabpanel] > ul {
+  margin-top: 1rem;
+}
+.tabs--simptoms > div [role=tabpanel] > ul li {
+  text-transform: lowercase;
+}
+.tabs--simptoms > div [role=tabpanel] > ul li span {
+  display: block;
+  font-family: "Finlandica BOLD", sans-serif;
+  text-transform: uppercase;
 }
 
 .button {

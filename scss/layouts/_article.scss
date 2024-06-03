@@ -76,7 +76,18 @@
 
       p {
         margin-top: torem(16);
-        font-size: $md;
+        font-size: $lg;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: torem(20);
+
+        img {
+          width: torem(62);
+          height: torem(68);
+        }
       }
 
       @include sm-breakpoint {
@@ -546,6 +557,16 @@
           li {
             &::marker {
               color: $red;
+            }
+          }
+        }
+      }
+
+      &--orange {
+        ul {
+          li {
+            &::marker {
+              color: $secondaryColor;
             }
           }
         }
@@ -1382,6 +1403,7 @@
     background: linear-gradient(45deg, #4358c1 0%, #a0aef7 100%);
     font-size: $lg;
     color: $white;
+    font-family: "Open-sans regular", sans-serif;
 
     .title {
       display: flex;
@@ -1432,8 +1454,62 @@
       }
     }
 
+    .item {
+      p {
+        line-height: 1.4;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: torem(10);
+        margin-top: torem(10);
+        padding-left: torem(20);
+        list-style-type: disc;
+
+        li {
+          list-style-type: initial;
+        }
+      }
+
+      &:first-child {
+        padding-bottom: torem(30);
+        border-bottom: 1px solid $white;
+      }
+
+      &:last-child {
+        padding-top: torem(30);
+      }
+    }
+
     @include sm-breakpoint {
       padding: torem(20) torem(30);
+    }
+  }
+
+  &--blue-bold-text {
+    margin-top: torem(50);
+
+    .container {
+      p,
+      li {
+        font-family: "Open-sans bold", sans-serif;
+        font-size: $lg;
+        line-height: 1.1;
+        color: $mainColor;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: torem(5);
+        padding-left: torem(20);
+        list-style-type: disc;
+
+        li {
+          list-style-type: initial;
+        }
+      }
     }
   }
 }

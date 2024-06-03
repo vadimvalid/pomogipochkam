@@ -23,6 +23,11 @@
         text-transform: uppercase;
       }
 
+      .container {
+        position: relative;
+        z-index: 1;
+      }
+
       @include sm-breakpoint {
         padding: torem(44) 0 torem(38);
 
@@ -544,6 +549,11 @@
             }
           }
         }
+      }
+
+      .text {
+        margin-top: torem(20);
+        font-family: "Open-sans regular", sans-serif;
       }
 
       @include sm-breakpoint {
@@ -1338,6 +1348,92 @@
 
     .article-text {
       margin-bottom: torem(50);
+    }
+
+    .section.top {
+      &:before {
+        background-image: url("../images/zabolevaniya/zabol-bg.webp");
+        background-position: 68%;
+      }
+    }
+
+    .knowledge {
+      background: none;
+
+      .buttons {
+        a {
+          width: torem(200);
+          padding: torem(15) torem(75);
+          background: linear-gradient(45deg, #4358c1 0%, #a0aef7 100%);
+          color: $white;
+
+          @include sm-breakpoint {
+            width: 100%;
+            padding: torem(15) torem(25);
+          }
+        }
+      }
+    }
+  }
+
+  &--bg-blue {
+    margin-top: torem(50);
+    padding: torem(40) torem(64);
+    background: linear-gradient(45deg, #4358c1 0%, #a0aef7 100%);
+    font-size: $lg;
+    color: $white;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: torem(10);
+      margin-bottom: torem(20);
+
+      h2 {
+        font-family: "Finlandica medium";
+        font-size: torem(31);
+        line-height: 1.14;
+        font-weight: 500;
+        color: $white;
+        text-transform: uppercase;
+      }
+
+      img {
+        width: torem(60);
+        height: torem(60);
+        padding: torem(9) torem(7) torem(7) torem(10);
+        background: $white;
+        border-radius: 50%;
+      }
+    }
+
+    &.image {
+      .container {
+        display: flex;
+
+        @include sm-breakpoint {
+          flex-direction: column;
+          gap: torem(30);
+        }
+      }
+
+      .left {
+        flex: 1;
+
+        p {
+          &:not(:last-of-type) {
+            margin-bottom: torem(20);
+          }
+        }
+      }
+
+      .right {
+        flex: 0 1 35%;
+      }
+    }
+
+    @include sm-breakpoint {
+      padding: torem(20) torem(30);
     }
   }
 }

@@ -1701,6 +1701,10 @@ h5 {
   color: #fff;
   text-transform: uppercase;
 }
+.article .section.top .container {
+  position: relative;
+  z-index: 1;
+}
 @media screen and (max-width: 767.98px) {
   .article .section.top {
     padding: 2.75rem 0 2.375rem;
@@ -2173,6 +2177,10 @@ h5 {
 }
 .article .section.article-list--red ul li::marker {
   color: #e3483a;
+}
+.article .section.article-list .text {
+  margin-top: 1.25rem;
+  font-family: "Open-sans regular", sans-serif;
 }
 @media screen and (max-width: 767.98px) {
   .article .section.article-list .container > p {
@@ -2769,6 +2777,76 @@ h5 {
 }
 .article.zabolevaniya-1 .article-text {
   margin-bottom: 3.125rem;
+}
+.article.zabolevaniya-1 .section.top:before {
+  background-image: url("../images/zabolevaniya/zabol-bg.webp");
+  background-position: 68%;
+}
+.article.zabolevaniya-1 .knowledge {
+  background: none;
+}
+.article.zabolevaniya-1 .knowledge .buttons a {
+  width: 12.5rem;
+  padding: 0.9375rem 4.6875rem;
+  background: linear-gradient(45deg, #4358c1 0%, #a0aef7 100%);
+  color: #fff;
+}
+@media screen and (max-width: 767.98px) {
+  .article.zabolevaniya-1 .knowledge .buttons a {
+    width: 100%;
+    padding: 0.9375rem 1.5625rem;
+  }
+}
+.article--bg-blue {
+  margin-top: 3.125rem;
+  padding: 2.5rem 4rem;
+  background: linear-gradient(45deg, #4358c1 0%, #a0aef7 100%);
+  font-size: 1.125rem;
+  color: #fff;
+}
+.article--bg-blue .title {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+.article--bg-blue .title h2 {
+  font-family: "Finlandica medium";
+  font-size: 1.9375rem;
+  line-height: 1.14;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+.article--bg-blue .title img {
+  width: 3.75rem;
+  height: 3.75rem;
+  padding: 0.5625rem 0.4375rem 0.4375rem 0.625rem;
+  background: #fff;
+  border-radius: 50%;
+}
+.article--bg-blue.image .container {
+  display: flex;
+}
+@media screen and (max-width: 767.98px) {
+  .article--bg-blue.image .container {
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+}
+.article--bg-blue.image .left {
+  flex: 1;
+}
+.article--bg-blue.image .left p:not(:last-of-type) {
+  margin-bottom: 1.25rem;
+}
+.article--bg-blue.image .right {
+  flex: 0 1 35%;
+}
+@media screen and (max-width: 767.98px) {
+  .article--bg-blue {
+    padding: 1.25rem 1.875rem;
+  }
 }
 
 .section.tg {

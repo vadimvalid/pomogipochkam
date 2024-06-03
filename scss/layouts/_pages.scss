@@ -258,9 +258,6 @@
 
             ul {
               li {
-                opacity: 0.5;
-                cursor: not-allowed;
-
                 &::marker {
                   color: $black;
                 }

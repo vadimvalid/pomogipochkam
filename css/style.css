@@ -2813,6 +2813,27 @@ h5 {
     padding: 0.9375rem 1.5625rem;
   }
 }
+.article.sindrom .section.top:before {
+  background-image: url("../images/zabolevaniya/zabol-bg.webp");
+  background-position: 68%;
+}
+.article.sindrom .section.article-table table th {
+  background: transparent;
+  border: none;
+  text-align: right;
+}
+.article.sindrom .section.article-table table tr td {
+  width: 50%;
+}
+.article.sindrom .section.article-table table tr td:first-child {
+  border-left: none;
+}
+.article.sindrom .section.article-table table tr td:last-child {
+  border-right: none;
+}
+.article.sindrom .section.article-table table tr:last-child td {
+  border-bottom: none;
+}
 .article--bg-blue {
   margin-top: 3.125rem;
   padding: 2.5rem 4rem;
@@ -2881,6 +2902,54 @@ h5 {
 .article--bg-blue .item:last-child {
   padding-top: 1.875rem;
 }
+.article--bg-blue h2 {
+  margin-bottom: 1.375rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.article--bg-blue .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.article--bg-blue .container > p {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.article--bg-blue .container > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  margin-top: 0.75rem;
+  padding-left: 2rem;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+}
+.article--bg-blue .container > ul li {
+  font-family: "Open-sans regular";
+  list-style-type: initial;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+.article--bg-blue .container > ul li::marker {
+  font-size: 1.5rem;
+  color: #4358c1;
+}
+.article--bg-blue .container > ul li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.article--bg-blue .container > ul li::marker {
+  font-size: 1rem;
+  color: #fff;
+}
 @media screen and (max-width: 767.98px) {
   .article--bg-blue {
     padding: 1.25rem 1.875rem;
@@ -2905,6 +2974,81 @@ h5 {
 }
 .article--blue-bold-text .container ul li {
   list-style-type: initial;
+}
+.article--block-arrows .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+  max-width: 29.25rem;
+  margin: 0 auto;
+}
+.article--block-arrows .wrapper .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.75rem 4.6875rem 2.375rem;
+  border: 3px solid #4358c1;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Open-sans regular", sans-serif;
+  font-size: 1rem;
+}
+.article--block-arrows .wrapper .item:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 2.875rem;
+  height: 100%;
+  background-image: url("../images/home/creatine-3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.article--block-arrows .wrapper .item:nth-child(even) {
+  border-color: #db790f;
+}
+.article--block-arrows .wrapper .item:nth-child(even):before {
+  left: auto;
+  right: -10px;
+  background-image: url("../images/home/creatine-2.svg");
+  -webkit-transform: translate(100%, -50%);
+  transform: translate(100%, -50%);
+}
+@media screen and (max-width: 767.98px) {
+  .article--block-arrows .wrapper {
+    max-width: 18.75rem;
+  }
+}
+.article--text-bold-image {
+  margin: 4.6875rem 0 6.125rem;
+}
+.article--text-bold-image .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5625rem;
+}
+.article--text-bold-image .wrapper p {
+  flex: 1;
+  font-family: "Open-sans regular", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: #4358c1;
+  text-transform: uppercase;
+}
+.article--text-bold-image .wrapper img {
+  flex: 0 1 10%;
+}
+@media screen and (max-width: 767.98px) {
+  .article--text-bold-image {
+    margin: 3.125rem 0 4.6875rem;
+  }
+  .article--text-bold-image .wrapper {
+    flex-direction: column;
+  }
 }
 
 .section.tg {

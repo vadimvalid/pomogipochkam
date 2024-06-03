@@ -1397,6 +1397,45 @@
     }
   }
 
+  &.sindrom {
+    .section.top {
+      &:before {
+        background-image: url("../images/zabolevaniya/zabol-bg.webp");
+        background-position: 68%;
+      }
+    }
+
+    .section.article-table {
+      table {
+        th {
+          background: transparent;
+          border: none;
+          text-align: right;
+        }
+
+        tr {
+          td {
+            width: 50%;
+
+            &:first-child {
+              border-left: none;
+            }
+
+            &:last-child {
+              border-right: none;
+            }
+          }
+
+          &:last-child {
+            td {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &--bg-blue {
     margin-top: torem(50);
     padding: torem(40) torem(64);
@@ -1482,6 +1521,48 @@
       }
     }
 
+    h2 {
+      margin-bottom: torem(22);
+      font-size: $xl;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: torem(12);
+      margin-top: torem(40);
+      font-size: $md;
+      line-height: 1.5;
+    }
+
+    .container {
+      > p {
+        margin-bottom: torem(12);
+        font-size: $md;
+        line-height: 1.5;
+      }
+
+      > ul {
+        @include articleList;
+
+        display: flex;
+        flex-direction: column;
+        padding-left: torem(20);
+
+        li {
+          font-size: $md;
+          line-height: 1.5;
+
+          &::marker {
+            font-size: $md;
+            color: $white;
+          }
+        }
+      }
+    }
+
     @include sm-breakpoint {
       padding: torem(20) torem(30);
     }
@@ -1509,6 +1590,89 @@
         li {
           list-style-type: initial;
         }
+      }
+    }
+  }
+
+  &--block-arrows {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: torem(26);
+      max-width: torem(468);
+      margin: 0 auto;
+
+      .item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: torem(28) torem(75) torem(38);
+        border: 3px solid $mainColor;
+        border-radius: 10px;
+        text-align: center;
+        font-family: "Open-sans regular", sans-serif;
+        font-size: $md;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -10px;
+          width: torem(46);
+          height: 100%;
+          background-image: url("../images/home/creatine-3.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          transform: translate(-100%, -50%);
+        }
+
+        &:nth-child(even) {
+          border-color: $secondaryColor;
+
+          &:before {
+            left: auto;
+            right: -10px;
+            background-image: url("../images/home/creatine-2.svg");
+            transform: translate(100%, -50%);
+          }
+        }
+      }
+
+      @include sm-breakpoint {
+        max-width: torem(300);
+      }
+    }
+  }
+
+  &--text-bold-image {
+    margin: torem(75) 0 torem(98);
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      gap: torem(25);
+
+      p {
+        flex: 1;
+        font-family: "Open-sans regular", sans-serif;
+        font-size: torem(24);
+        line-height: 1.1;
+        color: $mainColor;
+        text-transform: uppercase;
+      }
+
+      img {
+        flex: 0 1 10%;
+      }
+    }
+
+    @include sm-breakpoint {
+      margin: torem(50) 0 torem(75);
+
+      .wrapper {
+        flex-direction: column;
       }
     }
   }

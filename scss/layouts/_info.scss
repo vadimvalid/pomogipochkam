@@ -1,6 +1,6 @@
 .section {
   &.info {
-    padding: torem(72) torem(62);
+    padding: torem(72) torem(62) torem(20);
     background: radial-gradient(
         151.35% 47.47% at 50% 56.37%,
         rgba(255, 255, 255, 0.3) 0%,
@@ -10,27 +10,27 @@
 
     .wrapper {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      flex-wrap: wrap;
       gap: torem(52);
 
       .text {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: torem(8);
       }
 
       h2 {
+        display: inline-block;
         padding: torem(4) torem(5);
-        background: $red;
+        background: $green-new;
         font-family: "Finlandica medium";
         font-size: $xl;
         font-weight: 500;
         line-height: 1.14;
         text-transform: uppercase;
         color: $white;
-        text-align: center;
       }
     }
 
@@ -49,7 +49,7 @@
         }
 
         &__text {
-          flex: 0 1 70%;
+          flex: 0 1 100%;
           display: flex;
           flex-direction: column;
           align-items: flex-start;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -122,9 +122,8 @@
                 <li>
                   <a href="./podozreniya.html">У меня подозрение</a>
                 </li>
-                <li class="disabled">
-                  <!-- <a href="./zabolevaniya.html">У меня заболевание</a> -->
-                  У меня заболевание
+                <li>
+                  <a href="#">У меня заболевание</a>
                 </li>
               </ul>
             </nav>
@@ -142,93 +141,194 @@
             <div class="wrapper">
               <h2>Что такое хроническая болезнь почек?</h2>
               <p>
-                <strong>Хроническая болезнь почек (ХБП)</strong> – общее
-                название заболеваний почек длительностью более трех месяцев и
-                сопровождающихся постепенным замещением нормальных структур
-                соединительной тканью (фиброз) вследствие чего возникает и
-                нарастает почечная недостаточность. 
+                <strong>Главная задача лечения ХБП</strong> - замедлить
+                прогрессирование почечной недостаточности и отсрочить
+                необходимость в проведении гемодиализа. Ключевыми параметрами
+                контроля функции почек является уровень белка в моче
+                (протеинурия), альбумина в моче (альбуминурия) и креатинина в
+                крови, позволяющего рассчитать скорость клубочковой фильтрации
+                по формуле, находящейся в общем доступе.
               </p>
             </div>
           </div>
         </section>
-        <section class="section hbp">
+        <section class="section tabs">
+          <div class="container">
+            <p>
+              Для ряда иммуновоспалительных заболеваний почек –
+              <span>гломерулонефритов</span> – важно оценивать активность
+              заболевания. Индикатором того, что терапия является эффективной,
+              будет выход в ремиссию. Напротив, прогрессирование заболевания
+              говорит о том, что проводимое лечение должно быть скорректировано.
+              Пациенту очень важно понимать периоды течения ХБП для того, чтобы
+              иметь возможность адекватно оценивать свое состояние и прогресс
+              заболевания.
+            </p>
+            <div class="tabs">
+              <div role="tablist">
+                <button role="tab" aria-selected="true" id="remissiya">
+                  Ремиссия (полная)
+                </button>
+                <button role="tab" aria-selected="false" id="remissiya-part">
+                  Частичная ремиссия
+                </button>
+                <button role="tab" aria-selected="false" id="progress">
+                  Прогрессирование
+                </button>
+                <button role="tab" aria-selected="false" id="recidiv">
+                  Рецидив
+                </button>
+              </div>
+              <div role="tabpanel" aria-labelledby="remissiya">
+                <ul>
+                  <li>
+                    исчезновение симптомов заболевания (отсутствие эритроцитов в
+                    моче, нормализация артериального давления, альбумина в крови
+                    и др.)
+                  </li>
+                  <li>
+                    уровень белка в моче менее 0,3 г в сутки (что подтверждено
+                    двукратно с интервалом в 7 дней)
+                  </li>
+                  <li>стабильная скорость клубочковой фильтрации *</li>
+                  <li>заболевание полностью под контролем</li>
+                </ul>
+              </div>
+              <div role="tabpanel" aria-labelledby="remissiya-part" hidden>
+                <ul>
+                  <li>
+                    исчезновение симптомов заболевания (отсутствие эритроцитов в
+                    моче, нормализация артериального давления, альбумина в крови
+                    и др.)
+                  </li>
+                  <li>
+                    уровень белка в моче менее 0,3 г в сутки (что подтверждено
+                    двукратно с интервалом в 7 дней)
+                  </li>
+                  <li>стабильная скорость клубочковой фильтрации *</li>
+                  <li>заболевание полностью под контролем</li>
+                </ul>
+              </div>
+              <div role="tabpanel" aria-labelledby="progress" hidden>
+                <ul>
+                  <li>
+                    исчезновение симптомов заболевания (отсутствие эритроцитов в
+                    моче, нормализация артериального давления, альбумина в крови
+                    и др.)
+                  </li>
+                  <li>
+                    уровень белка в моче менее 0,3 г в сутки (что подтверждено
+                    двукратно с интервалом в 7 дней)
+                  </li>
+                  <li>стабильная скорость клубочковой фильтрации *</li>
+                  <li>заболевание полностью под контролем</li>
+                </ul>
+              </div>
+              <div role="tabpanel" aria-labelledby="recidiv" hidden>
+                <ul>
+                  <li>
+                    исчезновение симптомов заболевания (отсутствие эритроцитов в
+                    моче, нормализация артериального давления, альбумина в крови
+                    и др.)
+                  </li>
+                  <li>
+                    уровень белка в моче менее 0,3 г в сутки (что подтверждено
+                    двукратно с интервалом в 7 дней)
+                  </li>
+                  <li>стабильная скорость клубочковой фильтрации *</li>
+                  <li>заболевание полностью под контролем</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section tabs">
+          <div class="container">
+            <p>
+              <span class="red"
+                >Даже если вы вошли в ремиссию, контроль показателей, отражающих
+                работу почек, обязателен!Важно:</span
+              >
+              заведите папку или файл в телефоне/компьютере и сохраняйте все
+              результаты лабораторных и инструментальных исследований.
+            </p>
+            <div class="tabs">
+              <div role="tablist">
+                <button role="tab" aria-selected="true" id="krov">
+                  анализ крови
+                </button>
+                <button role="tab" aria-selected="false" id="mocha">
+                  анализ мочи
+                </button>
+                <button role="tab" aria-selected="false" id="uzi">
+                  узи почек
+                </button>
+                <button role="tab" aria-selected="false" id="biopsiya">
+                  биопсия
+                </button>
+              </div>
+              <div role="tabpanel" aria-labelledby="krov">
+                <ul>
+                  <li>Повышение уровня мочевины и креатинина</li>
+                  <li>Стойкое снижение СКФ* < 60 мл/мин/1,73 м²</li>
+                  <li>
+                    Нарушение концентрации электролитов кальция, калия, натрия,
+                    хлоридов
+                  </li>
+                  <li>Понижение уровня гемоглобина</li>
+                </ul>
+              </div>
+              <div role="tabpanel" aria-labelledby="mocha" hidden>
+                <ul>
+                  <li>Повышение уровня мочевины и креатинина</li>
+                  <li>Стойкое снижение СКФ* < 60 мл/мин/1,73 м²</li>
+                  <li>
+                    Нарушение концентрации электролитов кальция, калия, натрия,
+                    хлоридов
+                  </li>
+                  <li>Понижение уровня гемоглобина</li>
+                </ul>
+              </div>
+              <div role="tabpanel" aria-labelledby="uzi" hidden>
+                <ul>
+                  <li>Повышение уровня мочевины и креатинина</li>
+                  <li>Стойкое снижение СКФ* < 60 мл/мин/1,73 м²</li>
+                  <li>
+                    Нарушение концентрации электролитов кальция, калия, натрия,
+                    хлоридов
+                  </li>
+                  <li>Понижение уровня гемоглобина</li>
+                </ul>
+              </div>
+              <div role="tabpanel" aria-labelledby="biopsiya" hidden>
+                <ul>
+                  <li>Повышение уровня мочевины и креатинина</li>
+                  <li>Стойкое снижение СКФ* < 60 мл/мин/1,73 м²</li>
+                  <li>
+                    Нарушение концентрации электролитов кальция, калия, натрия,
+                    хлоридов
+                  </li>
+                  <li>Понижение уровня гемоглобина</li>
+                </ul>
+              </div>
+            </div>
+            <p class="thin">
+              *СКФ – скорость клубочковой фильтрации, рассчитывается по
+              специальной формуле с использованием концентрации креатинина
+            </p>
+          </div>
+        </section>
+        <section class="section tg">
           <div class="container">
             <div class="wrapper">
-              <h2>Хроническая болезнь почек (ХБП)</h2>
-              <div class="items">
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Снижение выделения мочи</p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Дисбаланс электролитов</p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Повышенное выведение белка с почками</p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Нарушение синтетической функции почек</p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Задержка жидкости в организме</p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Смещение кислотно-щелочного равновесия организма</p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Низкобелковые отеки</p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>
-                     Анемия,артериальная гипертензия,дефицит витамина D и др.
-                  </p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Отеки и артериальная гипертензия</p>
-                </div>
-                <div class="item">
-                  <img
-                    src="./images/zabolevaniya/icon-arrow.svg"
-                    alt="Arrow down"
-                  />
-                  <p>Повышенная кислотность (ацидоз)</p>
-                </div>
-              </div>
+              <img src="./images/icon-telegramm.svg" alt="telegramm icon" />
+              <p>
+                Подпишитесь на Telegram-канал Помогипочкам.рф, чтобы узнавать о
+                самых новых методах терапии
+              </p>
+              <a href="https://t.me/+ispO4rVXvRxiYjE6" target="_blank"
+                >Подписаться</a
+              >
             </div>
           </div>
         </section>
@@ -240,7 +340,7 @@
                 <strong>IgA-нефропатия (болезнь Берже)</strong> – это поражение
                 почечных клубочков (гломерулонефрит), возникающее из-за
                 отложения иммуноглобулинов А (IgA) в пространстве между
-                капиллярами с последующим нарушением всех функций почки.
+                капиллярами с последующим нарушением всех функций почек.
               </p>
               <div class="block">
                 <div class="block__content">
@@ -271,9 +371,15 @@
                   </div>
                   <div class="item">
                     <img
-                      src="./images/zabolevaniya/icon-1.svg"
+                      src="./images/zabolevaniya/zabol-1.svg"
                       alt="IgA-нефропатия"
                     />
+                    <p>
+                      Как и у кого может возникнуть IgA-нефропатия? Какие
+                      клинические формы болезни существуют? Как продлить
+                      ремиссию?
+                    </p>
+                    <a href="#" class="button">Узнать подробнее</a>
                   </div>
                 </div>
               </div>
@@ -317,9 +423,15 @@
                   </div>
                   <div class="item">
                     <img
-                      src="./images/zabolevaniya/icon-2.svg"
+                      src="./images/zabolevaniya/zabol-2.svg"
                       alt="С3-гломерулопатия"
                     />
+                    <p>
+                      Особенности развития симптомов, почечные и внепочечные
+                      проявления, а также критерии эффективности терапии
+                      СЗ-гломеруопатии читайте в статье
+                    </p>
+                    <a href="#" class="button">Узнать подробнее</a>
                   </div>
                 </div>
               </div>
@@ -378,32 +490,23 @@
         <section class="section info">
           <div class="container">
             <div class="wrapper">
+              <div class="info__content__image">
+                <img
+                  src="./images/zabolevaniya/listik.svg"
+                  alt="Важная информация для пациентов на диализе и ожидающих трансплантацию почки"
+                  width="294"
+                  height="278"
+                />
+              </div>
               <div class="text">
                 <h2>Важная информация</h2>
                 <h2>для пациентов на диализе</h2>
                 <h2>и ожидающих трансплантацию почки</h2>
               </div>
               <div class="info__content">
-                <div class="info__content__image">
-                  <picture>
-                    <source
-                      srcset="./images/zabolevaniya/listik.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      src="./images/zabolevaniya/listik.png"
-                      alt="Важная информация для пациентов на диализе и ожидающих трансплантацию почки"
-                      width="294"
-                      height="278"
-                    />
-                  </picture>
-                </div>
                 <div class="info__content__text">
                   <p>
-                    <a
-                      href="https://nephroliga.ru/nephrop
-athy/"
-                      target="_blank"
+                    <a href="https://nephroliga.ru/nephropathy/" target="_blank"
                       ><span>НЕФРО-ЛИГА </span></a
                     >
                     - межрегиональная общественная организация нефрологических
@@ -431,25 +534,12 @@ athy/"
                   <a
                     href="https://nephroliga.ru/nephropathy/"
                     target="_blank"
-                    class="button button--red"
+                    class="button button--green"
                     >Перейти на сайт НЕФРО-ЛИГИ</a
                   >
+                  <p>11202106GenMed/Dig/05.24/0</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-        <section class="section tg">
-          <div class="container">
-            <div class="wrapper">
-              <img src="./images/icon-telegramm.svg" alt="telegramm icon" />
-              <p>
-                Подпишитесь на Telegram-канал Помогипочкам.рф, чтобы узнавать о
-                самых новых методах терапии
-              </p>
-              <a href="https://t.me/+ispO4rVXvRxiYjE6" target="_blank"
-                >Подписаться</a
-              >
             </div>
           </div>
         </section>
@@ -473,8 +563,20 @@ athy/"
             </div>
 
             <div class="item">
-              <p>Сайт создан при поддержке ООО «Новартис Фарма»</p>
-              <p>782189/GenMed/Dig/03.24/0</p>
+              <p>432161/GenMed/Dig/04.24/0</p>
+            </div>
+
+            <div class="item">
+              <p>
+                Данный материал не является рекомендацией к лечению и не
+                подменяет собой консультацию специалиста. Для получения
+                квалифицированной медицинской консультации или помощи обратитесь
+                к своему лечащему врачу. Для распространения на территории РФ.
+                Материал подготовлен при финансовой поддержке ООО «Новартис
+                Фарма».  ООО «Новартис Фарма» Ленинградский проспект, д. 70
+                Москва, 125315 Россия. Тел: +7 (495) 967 12 70 Факс: +7 (495)
+                967 12 68) www.novartis.com 
+              </p>
             </div>
           </div>
         </div>

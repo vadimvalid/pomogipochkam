@@ -4,7 +4,8 @@
 
   .wrapper {
     display: flex;
-    gap: torem(50);
+    flex-wrap: wrap;
+    gap: torem(22);
 
     @include sm-breakpoint {
       flex-direction: column;
@@ -22,14 +23,20 @@
         max-width: torem(285);
       }
 
-      &:last-child {
+      &:nth-child(2) {
         flex: 1;
         align-items: flex-end;
         justify-content: flex-end;
+        padding-bottom: torem(20);
 
         @include sm-breakpoint {
           align-items: flex-start;
+          padding: 0;
         }
+      }
+
+      &:last-child {
+        flex: 0 1 100%;
       }
     }
 

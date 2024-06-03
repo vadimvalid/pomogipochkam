@@ -280,7 +280,8 @@ h5 {
 }
 .footer .wrapper {
   display: flex;
-  gap: 3.125rem;
+  flex-wrap: wrap;
+  gap: 1.375rem;
 }
 @media screen and (max-width: 767.98px) {
   .footer .wrapper {
@@ -298,15 +299,20 @@ h5 {
 .footer .wrapper .item:first-child {
   max-width: 17.8125rem;
 }
-.footer .wrapper .item:last-child {
+.footer .wrapper .item:nth-child(2) {
   flex: 1;
   align-items: flex-end;
   justify-content: flex-end;
+  padding-bottom: 1.25rem;
 }
 @media screen and (max-width: 767.98px) {
-  .footer .wrapper .item:last-child {
+  .footer .wrapper .item:nth-child(2) {
     align-items: flex-start;
+    padding: 0;
   }
+}
+.footer .wrapper .item:last-child {
+  flex: 0 1 100%;
 }
 .footer .wrapper ul {
   display: flex;
@@ -1413,9 +1419,16 @@ h5 {
 .title-description .wrapper .block__content .item:last-child {
   flex: 0 1 30%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  gap: 0.625rem;
   padding-top: 1.875rem;
+}
+.title-description .wrapper .block__content .item:last-child p {
+  font-size: 1.125rem;
+  text-align: center;
+  font-style: italic;
 }
 .title-description .wrapper .block__content--images .item:first-child {
   flex: 0 1 40%;
@@ -1423,6 +1436,7 @@ h5 {
 .title-description .wrapper .block__content--images .item:last-child {
   flex: 0 1 60%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1.25rem;
 }
@@ -1528,31 +1542,31 @@ h5 {
 }
 
 .section.info {
-  padding: 4.5rem 3.875rem;
+  padding: 4.5rem 3.875rem 1.25rem;
   background: radial-gradient(151.35% 47.47% at 50% 56.37%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #fff;
 }
 .section.info .wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   gap: 3.25rem;
 }
 .section.info .wrapper .text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
 }
 .section.info .wrapper h2 {
+  display: inline-block;
   padding: 0.25rem 0.3125rem;
-  background: #e3483a;
+  background: #34ac2b;
   font-family: "Finlandica medium";
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.14;
   text-transform: uppercase;
   color: #fff;
-  text-align: center;
 }
 .section.info .info__content {
   display: flex;
@@ -1567,7 +1581,7 @@ h5 {
   object-fit: contain;
 }
 .section.info .info__content__text {
-  flex: 0 1 70%;
+  flex: 0 1 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2477,6 +2491,77 @@ h5 {
   }
 }
 
+.tabs {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+}
+.tabs > div [role=tablist] {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5px;
+}
+.tabs > div [role=tabpanel] {
+  position: relative;
+  z-index: 1;
+  padding: 2.1875rem 1rem 3.75rem;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+.tabs > div [role=tabpanel] ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding-left: 2.25rem;
+  list-style-type: disc;
+}
+.tabs > div [role=tabpanel] ul li {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  list-style-type: initial;
+}
+.tabs > div [role=tabpanel] ul li::marker {
+  font-size: 1.5rem;
+  color: #e3483a;
+}
+.tabs button {
+  flex: 1;
+  padding: 1.0625rem 0.625rem 2.5rem;
+  background: #dce1e0;
+  border: none;
+  border-radius: 20px 20px 0 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.tabs button[aria-selected=true] {
+  background: #455ac2;
+  color: #fff;
+}
+.tabs button:first-child {
+  border-bottom-left-radius: 20px;
+}
+.tabs button:last-child {
+  border-bottom-right-radius: 20px;
+}
+.tabs .container > p {
+  margin-bottom: 1.875rem;
+}
+.tabs .container > p span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tabs .container > p span.red {
+  color: #e3483a;
+}
+.tabs .container > p.thin {
+  font-family: "Open-sans regular";
+}
+
 .button {
   all: unset;
   display: flex;
@@ -2486,7 +2571,7 @@ h5 {
   padding: 0.8125rem 1.4375rem;
   border-radius: 42px;
   background: #4358c1;
-  font-family: "Open-sans bold";
+  font-family: "Open-sans bold", sans-serif;
   font-size: 0.8125rem;
   line-height: 1.37;
   color: #fff;
@@ -2525,6 +2610,11 @@ h5 {
 }
 .button--red {
   background: #e3483a;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.button--green {
+  background: #34ac2b;
   color: #fff;
   font-size: 1.5rem;
 }

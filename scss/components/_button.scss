@@ -7,7 +7,7 @@
   padding: torem(13) torem(23);
   border-radius: 42px;
   background: $mainColor;
-  font-family: "Open-sans bold";
+  font-family: "Open-sans bold", sans-serif;
   font-size: torem(13);
   line-height: 1.37;
   color: $white;
@@ -53,6 +53,12 @@
 
   &--red {
     background: $red;
+    color: $white;
+    font-size: torem(24);
+  }
+
+  &--green {
+    background: $green-new;
     color: $white;
     font-size: torem(24);
   }

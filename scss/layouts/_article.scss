@@ -651,6 +651,7 @@
       .wrapper {
         @include sectionShadow;
         padding: torem(31) torem(34);
+        overflow-x: auto;
       }
 
       table {

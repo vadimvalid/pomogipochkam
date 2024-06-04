@@ -3124,6 +3124,30 @@ h5 {
   font-size: 1.5rem;
   color: #e3483a;
 }
+.tabs > div [role=tabpanel] ul li .parent {
+  position: relative;
+  display: inline-block;
+}
+.tabs > div [role=tabpanel] ul li .popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+  max-width: 12.5rem;
+  padding: 0.9375rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
+  color: #4358c1;
+  font-family: "Open-sans regular";
+  font-style: italic;
+  -webkit-transform: translate(50%, -100%);
+  transform: translate(50%, -100%);
+}
+.tabs > div [role=tabpanel] ul li:hover .popup {
+  display: block;
+}
 .tabs button {
   flex: 1;
   padding: 1.0625rem 0.625rem 2.5rem;

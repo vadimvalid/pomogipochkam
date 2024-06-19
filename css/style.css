@@ -217,6 +217,10 @@ h5 {
   margin-top: 1.25rem;
 }
 
+.mt-30 {
+  margin-top: 1.875rem;
+}
+
 .parent {
   position: relative;
   display: inline-block;
@@ -1855,6 +1859,9 @@ h5 {
   color: #db790f;
   text-transform: uppercase;
 }
+.article .section.article-title--orange p {
+  font-size: 1.125rem;
+}
 .article .section.article-title--orange.image .container {
   display: flex;
   align-items: center;
@@ -2873,10 +2880,11 @@ h5 {
 .article.sindrom .section.article-table table th {
   background: transparent;
   border: none;
-  text-align: right;
+  text-align: center;
 }
 .article.sindrom .section.article-table table tr td {
   width: 50%;
+  text-align: center;
 }
 .article.sindrom .section.article-table table tr td:first-child {
   border-left: none;

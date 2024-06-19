@@ -138,6 +138,10 @@
         text-transform: uppercase;
       }
 
+      p {
+        font-size: $lg;
+      }
+
       &.image {
         .container {
           display: flex;
@@ -1413,12 +1417,13 @@
         th {
           background: transparent;
           border: none;
-          text-align: right;
+          text-align: center;
         }
 
         tr {
           td {
             width: 50%;
+            text-align: center;
 
             &:first-child {
               border-left: none;

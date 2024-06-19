@@ -272,6 +272,10 @@ h5 {
   text-transform: uppercase !important;
 }
 
+.border-none {
+  border: none !important;
+}
+
 .header {
   padding: 1.625rem 0 1.4375rem;
 }

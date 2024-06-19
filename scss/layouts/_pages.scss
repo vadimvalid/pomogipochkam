@@ -138,10 +138,30 @@
       );
 
       background-position: 66% bottom;
+      z-index: 10;
     }
 
     h1 {
       color: $black;
+    }
+
+    @include md-breakpoint {
+      &:after {
+        background-position: 90% bottom;
+      }
+    }
+
+    @include sm-breakpoint {
+      padding: torem(10) 0 torem(80);
+
+      &:after {
+        background-position: 80% bottom;
+      }
+
+      h1 {
+        max-width: 80%;
+        font-size: torem(26);
+      }
     }
   }
 

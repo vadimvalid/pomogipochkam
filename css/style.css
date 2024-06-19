@@ -245,6 +245,13 @@ h5 {
   transform: translate(50%, -100%);
   text-transform: lowercase;
 }
+@media screen and (max-width: 767.98px) {
+  .parent .popup {
+    max-width: 12.5rem;
+    -webkit-transform: translate(35%, -100%);
+    transform: translate(35%, -100%);
+  }
+}
 .parent:hover .popup {
   display: block;
 }
@@ -942,9 +949,27 @@ h5 {
   background-image: -webkit-image-set(url("../images/zabolevaniya/hero.webp") 1x, url("../images/zabolevaniya/hero-2x.webp") 2x);
   background-image: image-set(url("../images/zabolevaniya/hero.webp") 1x, url("../images/zabolevaniya/hero-2x.webp") 2x);
   background-position: 66% bottom;
+  z-index: 10;
 }
 .zabolevaniya .hero h1 {
   color: #3d3d40;
+}
+@media screen and (max-width: 991.98px) {
+  .zabolevaniya .hero:after {
+    background-position: 90% bottom;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .zabolevaniya .hero {
+    padding: 0.625rem 0 5rem;
+  }
+  .zabolevaniya .hero:after {
+    background-position: 80% bottom;
+  }
+  .zabolevaniya .hero h1 {
+    max-width: 80%;
+    font-size: 1.625rem;
+  }
 }
 .zabolevaniya .preview {
   padding-bottom: 3.4375rem;
@@ -3239,6 +3264,100 @@ h5 {
 }
 .tabs--simptoms > div [role=tabpanel] > ul li {
   text-transform: lowercase;
+}
+@media screen and (max-width: 767.98px) {
+  .tabs {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+  .tabs > div [role=tablist] {
+    gap: 2px;
+  }
+  .tabs > div [role=tabpanel] {
+    padding: 1.5625rem 0.75rem 2.375rem;
+    border-radius: 16px;
+    -webkit-transform: translateY(-14px);
+    transform: translateY(-14px);
+  }
+  .tabs > div [role=tabpanel] ul {
+    gap: 0.5rem;
+    padding-left: 1.875rem;
+  }
+  .tabs > div [role=tabpanel] ul li {
+    font-size: 1rem;
+  }
+  .tabs > div [role=tabpanel] ul li::marker {
+    font-size: 1rem;
+  }
+  .tabs button {
+    padding: 0.75rem 0.375rem 1.625rem;
+    border-radius: 16px 16px 0 0;
+    font-size: 1.125rem;
+  }
+  .tabs button:first-child {
+    border-bottom-left-radius: 14px;
+  }
+  .tabs button:last-child {
+    border-bottom-right-radius: 14px;
+  }
+  .tabs .container > p {
+    margin-bottom: 1.375rem;
+  }
+  .tabs .container > p span {
+    font-size: 1.125rem;
+  }
+  .tabs .container > p span.red {
+    font-size: 1rem;
+  }
+  .tabs--simptoms > div [role=tabpanel] > ul {
+    margin-top: 0.75rem;
+  }
+}
+@media screen and (max-width: 586px) {
+  .tabs {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+  .tabs > div [role=tabpanel] {
+    padding: 1.125rem 0.625rem 1.75rem;
+    border-radius: 12px;
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+  .tabs > div [role=tabpanel] ul {
+    gap: 0.25rem;
+    padding-left: 1.5rem;
+  }
+  .tabs > div [role=tabpanel] ul li {
+    font-size: 0.875rem;
+  }
+  .tabs > div [role=tabpanel] ul li::marker {
+    font-size: 0.875rem;
+  }
+  .tabs button {
+    padding: 0.5rem 0.25rem 1.125rem;
+    border-radius: 12px 12px 0 0;
+    font-size: 0.875rem;
+    word-break: break-all;
+  }
+  .tabs button:first-child {
+    border-bottom-left-radius: 12px;
+  }
+  .tabs button:last-child {
+    border-bottom-right-radius: 12px;
+  }
+  .tabs .container > p {
+    margin-bottom: 1rem;
+  }
+  .tabs .container > p span {
+    font-size: 1rem;
+  }
+  .tabs .container > p span.red {
+    font-size: 0.875rem;
+  }
+  .tabs--simptoms > div [role=tabpanel] > ul {
+    margin-top: 0.5rem;
+  }
 }
 
 .button {

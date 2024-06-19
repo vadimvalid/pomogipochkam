@@ -98,4 +98,137 @@
       }
     }
   }
+
+  @include sm-breakpoint {
+    margin-bottom: torem(16);
+    font-size: $lg;
+
+    > div {
+      [role="tablist"] {
+        gap: 2px;
+      }
+
+      [role="tabpanel"] {
+        padding: torem(25) torem(12) torem(38);
+        border-radius: 16px;
+        transform: translateY(-14px);
+
+        ul {
+          gap: 0.5rem;
+          padding-left: 1.875rem;
+
+          li {
+            font-size: $md;
+
+            &::marker {
+              font-size: $md;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      padding: torem(12) torem(6) torem(26);
+      border-radius: 16px 16px 0 0;
+      font-size: $lg;
+
+      &:first-child {
+        border-bottom-left-radius: 14px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 14px;
+      }
+    }
+
+    .container {
+      > p {
+        margin-bottom: torem(22);
+
+        span {
+          font-size: $lg;
+
+          &.red {
+            font-size: $md;
+          }
+        }
+      }
+    }
+
+    &--simptoms {
+      > div {
+        [role="tabpanel"] {
+          > ul {
+            margin-top: torem(12);
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 586px) {
+    margin-bottom: torem(12);
+    font-size: $md;
+
+    > div {
+      [role="tabpanel"] {
+        padding: torem(18) torem(10) torem(28);
+        border-radius: 12px;
+        transform: translateY(-12px);
+
+        ul {
+          gap: 0.25rem;
+          padding-left: 1.5rem;
+
+          li {
+            font-size: $sm;
+
+            &::marker {
+              font-size: $sm;
+            }
+          }
+        }
+      }
+    }
+
+    button {
+      padding: torem(8) torem(4) torem(18);
+      border-radius: 12px 12px 0 0;
+      font-size: $sm;
+      word-break: break-all;
+
+      &:first-child {
+        border-bottom-left-radius: 12px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 12px;
+      }
+    }
+
+    .container {
+      > p {
+        margin-bottom: torem(16);
+
+        span {
+          font-size: $md;
+
+          &.red {
+            font-size: $sm;
+          }
+        }
+      }
+    }
+
+    &--simptoms {
+      > div {
+        [role="tabpanel"] {
+          > ul {
+            margin-top: torem(8);
+          }
+        }
+      }
+    }
+  }
 }

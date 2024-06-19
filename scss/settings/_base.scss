@@ -99,6 +99,11 @@ h5 {
     font-style: italic;
     transform: translate(50%, -100%);
     text-transform: lowercase;
+
+    @include sm-breakpoint {
+      max-width: torem(200);
+      transform: translate(35%, -100%);
+    }
   }
 
   &:hover .popup {

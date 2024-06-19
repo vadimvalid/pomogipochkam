@@ -3338,7 +3338,7 @@ h5 {
     padding: 0.5rem 0.25rem 1.125rem;
     border-radius: 12px 12px 0 0;
     font-size: 0.75rem;
-    word-break: break-all;
+    word-break: break-word;
   }
   .tabs button:first-child {
     border-bottom-left-radius: 12px;
@@ -3354,6 +3354,9 @@ h5 {
   }
   .tabs .container > p span.red {
     font-size: 0.875rem;
+  }
+  .tabs .parent .popup {
+    font-size: 0.75rem;
   }
   .tabs--simptoms > div [role=tabpanel] > ul {
     margin-top: 0.5rem;

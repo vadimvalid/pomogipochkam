@@ -182,18 +182,29 @@
               <div role="tabpanel" aria-labelledby="remissiya">
                 <ul>
                   <li>
-                    исчезновение симптомов заболевания (отсутствие эритроцитов в
-                    моче, нормализация артериального давления, альбумина в крови
-                    и др.)
+                    исчезновение симптомов
+                    <p class="parent">
+                      заболевания*
+                      <span class="popup"
+                        >отсутствие эритроцитов в моче, нормализация
+                        артериального давления, альбумина в крови и др.</span
+                      >
+                    </p>
                   </li>
                   <li>
                     уровень белка в моче менее 0,3 г в сутки (что подтверждено
                     двукратно с интервалом в 7 дней)
                   </li>
                   <li>
-                    стабильная скорость клубочковой фильтрации (далее через
-                    звездочку при наведении курсора «определяется по уровню
-                    креатинина в крови»)
+                    стабильная скорость клубочковой
+                    <p class="parent">
+                      фильтрации*
+                      <span class="popup"
+                        >определяется по уровню креатинина в крови</span
+                      >
+                    </p>
+                    (далее через звездочку при наведении курсора «определяется
+                    по уровню креатинина в крови»)
                   </li>
                   <li>заболевание полностью под контролем</li>
                 </ul>
@@ -237,6 +248,14 @@
                 </ul>
               </div>
             </div>
+            <small
+              >Источник: KDIGO 2021 Clinical Practice Guideline for the
+              Management of Glomerular Diseases, translation into Russian. I.N.
+              Bobkova, N.M. Bulanov, E.V. Zakharova, A.Y. Zemchenkov, E.S.
+              Kamyshova, E.V. Parshina, L.S. Prikhodina, A.D. Putintseva, A.N.
+              Shvedova; edited by E.V. Zakharova. Nephrologу and Dialуsis. 2022.
+              24(4):577-874. doi: 10.28996/2618-9801-2022-4-577-874
+            </small>
           </div>
         </section>
         <section class="section tabs">
@@ -244,25 +263,39 @@
             <p>
               <span class="red"
                 >Даже если вы вошли в ремиссию, контроль показателей, отражающих
-                работу почек, обязателен!Важно:</span
+                работу почек, обязателен!<br />Важно:</span
               >
               заведите папку или файл в телефоне/компьютере и сохраняйте все
               результаты лабораторных и инструментальных исследований.
             </p>
             <div class="tabs">
               <div role="tablist">
-                <button role="tab" aria-selected="true" id="mocha">
-                  анализ мочи
+                <button role="tab" aria-selected="true" id="krov">
+                  Анализ крови
+                </button>
+                <button role="tab" aria-selected="false" id="mocha">
+                  Анализ мочи
                 </button>
                 <button role="tab" aria-selected="false" id="uzi">
-                  узи почек
+                  Узи почек
                 </button>
                 <button role="tab" aria-selected="false" id="biopsiya">
-                  биопсия
+                  Биопсия
                 </button>
               </div>
 
-              <div role="tabpanel" aria-labelledby="mocha">
+              <div role="tabpanel" aria-labelledby="krov">
+                <ul>
+                  <li>Повышение уровня мочевины и креатинина</li>
+                  <li>Стойкое снижение СКФ* < 60 мл/мин/1,73 м²</li>
+                  <li>
+                    Нарушение концентрации электролитов кальция, калия, натрия,
+                    хлоридов
+                  </li>
+                  <li>Понижение уровня гемоглобина</li>
+                </ul>
+              </div>
+              <div role="tabpanel" aria-labelledby="mocha" hidden>
                 <ul>
                   <li>
                     Повышение предельно допустимого количества эритроцитов в
@@ -559,7 +592,7 @@
                     href="https://nephroliga.ru/nephropathy/"
                     target="_blank"
                     class="button button--green"
-                    >Перейти на сайт НЕФРО-ЛИГИ</a
+                    >Перейти на сайт Нефро-Лиги</a
                   >
                   <p>11202106GenMed/Dig/05.24/0</p>
                 </div>

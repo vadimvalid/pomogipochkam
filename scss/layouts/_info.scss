@@ -63,6 +63,10 @@
               font-family: "Open-sans bold";
               text-decoration-line: underline;
             }
+
+            &:last-of-type {
+              margin-top: torem(20);
+            }
           }
 
           h4 {

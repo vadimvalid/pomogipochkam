@@ -1621,6 +1621,9 @@ h5 {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
 }
+.section.info .info__content__text > p:last-of-type {
+  margin-top: 1.25rem;
+}
 .section.info .info__content__text h4 {
   font-family: "Open-sans bold";
   font-size: 1.25rem;
@@ -3133,7 +3136,6 @@ h5 {
   font-size: 1.5rem;
   font-weight: 700;
   color: #000;
-  text-transform: capitalize;
   cursor: pointer;
 }
 .tabs button[aria-selected=true] {
@@ -3155,6 +3157,7 @@ h5 {
   text-transform: uppercase;
 }
 .tabs .container > p span.red {
+  font-size: 1.25rem;
   color: #e3483a;
 }
 .tabs .container > p.thin {
@@ -3185,13 +3188,15 @@ h5 {
   right: 0;
   z-index: 2;
   display: none;
-  max-width: 12.5rem;
-  padding: 0.9375rem;
+  width: -webkit-max-content;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
   color: #4358c1;
   font-family: "Open-sans regular";
+  font-size: 1rem;
   font-style: italic;
   -webkit-transform: translate(50%, -100%);
   transform: translate(50%, -100%);

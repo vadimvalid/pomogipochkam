@@ -88,22 +88,11 @@
   &--simptoms {
     > div {
       [role="tabpanel"] {
-        > p,
-        div {
-          font-size: $md;
-        }
-
         > ul {
           margin-top: torem(16);
 
           li {
             text-transform: lowercase;
-
-            span {
-              display: block;
-              font-family: "Finlandica BOLD", sans-serif;
-              text-transform: uppercase;
-            }
           }
         }
       }

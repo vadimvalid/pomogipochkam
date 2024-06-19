@@ -257,6 +257,10 @@ h5 {
   font-family: "Finlandica BOLD", sans-serif !important;
 }
 
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
 .header {
   padding: 1.625rem 0 1.4375rem;
 }
@@ -3222,20 +3226,11 @@ h5 {
 .tabs .container > p.thin {
   font-family: "Open-sans regular";
 }
-.tabs--simptoms > div [role=tabpanel] > p,
-.tabs--simptoms > div [role=tabpanel] div {
-  font-size: 1rem;
-}
 .tabs--simptoms > div [role=tabpanel] > ul {
   margin-top: 1rem;
 }
 .tabs--simptoms > div [role=tabpanel] > ul li {
   text-transform: lowercase;
-}
-.tabs--simptoms > div [role=tabpanel] > ul li span {
-  display: block;
-  font-family: "Finlandica BOLD", sans-serif;
-  text-transform: uppercase;
 }
 
 .button {

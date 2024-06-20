@@ -29,4 +29,22 @@
       }
     }
   }
+
+  &.new {
+    .wrapper {
+      padding-top: torem(45);
+
+      > p {
+        flex: 0 1 60%;
+      }
+
+      @include sm-breakpoint {
+        padding-top: torem(30);
+
+        > p {
+          flex: 1;
+        }
+      }
+    }
+  }
 }

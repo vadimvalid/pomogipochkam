@@ -233,23 +233,24 @@ h5 {
   display: none;
   width: -webkit-max-content;
   width: max-content;
+  max-width: 31.25rem;
   padding: 0.25rem 0.5rem;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
   color: #4358c1;
   font-family: "Open-sans regular";
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-style: italic;
-  -webkit-transform: translate(50%, -100%);
-  transform: translate(50%, -100%);
-  text-transform: lowercase;
+  -webkit-transform: translate(70%, -100%);
+  transform: translate(70%, -100%);
 }
 @media screen and (max-width: 767.98px) {
   .parent .popup {
     max-width: 12.5rem;
     -webkit-transform: translate(35%, -100%);
     transform: translate(35%, -100%);
+    font-size: 0.75rem;
   }
 }
 .parent:hover .popup {
@@ -463,6 +464,20 @@ h5 {
   }
   .preview .wrapper h2 {
     font-size: 1.125rem;
+  }
+}
+.preview.new .wrapper {
+  padding-top: 2.8125rem;
+}
+.preview.new .wrapper > p {
+  flex: 0 1 60%;
+}
+@media screen and (max-width: 767.98px) {
+  .preview.new .wrapper {
+    padding-top: 1.875rem;
+  }
+  .preview.new .wrapper > p {
+    flex: 1;
   }
 }
 
@@ -980,6 +995,9 @@ h5 {
 }
 .zabolevaniya .preview .wrapper h2 {
   color: #e3483a;
+}
+.zabolevaniya .preview.new {
+  padding-bottom: 1.25rem;
 }
 
 .home .main {
@@ -3250,6 +3268,7 @@ h5 {
 }
 .tabs .container > p {
   margin-bottom: 1.875rem;
+  line-height: 1.3;
 }
 .tabs .container > p span {
   font-size: 1.5rem;
@@ -3284,7 +3303,6 @@ h5 {
     transform: translateY(-14px);
   }
   .tabs > div [role=tabpanel] ul {
-    gap: 0.5rem;
     padding-left: 1.875rem;
   }
   .tabs > div [role=tabpanel] ul li {
@@ -3329,7 +3347,6 @@ h5 {
     transform: translateY(-12px);
   }
   .tabs > div [role=tabpanel] ul {
-    gap: 0.25rem;
     padding-left: 1.5rem;
   }
   .tabs > div [role=tabpanel] ul li {
@@ -3358,9 +3375,6 @@ h5 {
   }
   .tabs .container > p span.red {
     font-size: 0.875rem;
-  }
-  .tabs .parent .popup {
-    font-size: 0.75rem;
   }
   .tabs--simptoms > div [role=tabpanel] > ul {
     margin-top: 0.5rem;
@@ -3423,6 +3437,9 @@ h5 {
   color: #fff;
   font-size: 1.5rem;
 }
+.button--small {
+  font-size: 1rem;
+}
 @media screen and (max-width: 767.98px) {
   .button {
     padding: 0.625rem 1rem;
@@ -3451,6 +3468,9 @@ h5 {
   }
   .button--red {
     font-size: 1.125rem;
+  }
+  .button--small {
+    font-size: 0.875rem;
   }
 }
 

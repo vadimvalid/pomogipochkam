@@ -173,6 +173,10 @@
         color: $red;
       }
     }
+
+    &.new {
+      padding-bottom: torem(20);
+    }
   }
 }
 

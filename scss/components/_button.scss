@@ -63,6 +63,10 @@
     font-size: torem(24);
   }
 
+  &--small {
+    font-size: $md;
+  }
+
   @include sm-breakpoint {
     padding: torem(10) torem(16);
 
@@ -96,6 +100,10 @@
 
     &--red {
       font-size: $lg;
+    }
+
+    &--small {
+      font-size: $sm;
     }
   }
 }

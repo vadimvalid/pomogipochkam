@@ -89,20 +89,21 @@ h5 {
     z-index: 2;
     display: none;
     width: max-content;
+    max-width: torem(500);
     padding: torem(4) torem(8);
     background: $white;
     border-radius: 20px;
     box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
     color: $mainColor;
     font-family: "Open-sans regular";
-    font-size: $md;
+    font-size: $sm;
     font-style: italic;
-    transform: translate(50%, -100%);
-    text-transform: lowercase;
+    transform: translate(70%, -100%);
 
     @include sm-breakpoint {
       max-width: torem(200);
       transform: translate(35%, -100%);
+      font-size: $xs;
     }
   }
 

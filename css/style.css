@@ -230,6 +230,10 @@ h5 {
   }
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -3019,7 +3023,7 @@ h5 {
   margin-bottom: 1.25rem;
 }
 .article--bg-blue.image .right {
-  flex: 0 1 30%;
+  flex: 0 1 25%;
 }
 .article--bg-blue .item p {
   line-height: 1.4;
@@ -3319,9 +3323,6 @@ h5 {
 }
 .tabs--simptoms > div [role=tabpanel] > ul {
   margin-top: 1rem;
-}
-.tabs--simptoms > div [role=tabpanel] > ul li {
-  text-transform: lowercase;
 }
 @media screen and (max-width: 767.98px) {
   .tabs {

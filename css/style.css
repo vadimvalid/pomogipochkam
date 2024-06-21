@@ -221,6 +221,19 @@ h5 {
   margin-top: 1.875rem;
 }
 
+.mt-120 {
+  margin-top: 7.5rem !important;
+}
+@media screen and (max-width: 767.98px) {
+  .mt-120 {
+    margin-top: 3.125rem !important;
+  }
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
 .parent {
   position: relative;
   display: inline-block;
@@ -269,12 +282,28 @@ h5 {
   font-family: "Finlandica BOLD", sans-serif !important;
 }
 
+.fw-regular {
+  font-family: "Open-sans regular", sans-serif !important;
+}
+
 .text-uppercase {
   text-transform: uppercase !important;
 }
 
 .border-none {
   border: none !important;
+}
+
+.fz-14 {
+  font-size: 0.875rem !important;
+}
+
+.fz-16 {
+  font-size: 1rem !important;
+}
+
+.align-start {
+  align-self: flex-start !important;
 }
 
 .header {
@@ -960,6 +989,9 @@ h5 {
   }
 }
 
+.zabolevaniya {
+  color: #000;
+}
 .zabolevaniya .hero {
   padding: 7.5625rem 0 7.625rem;
   background: radial-gradient(101.79% 48.18% at 52.92% 94.32%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #e1e5e4;
@@ -3157,6 +3189,9 @@ h5 {
   .article--text-bold-image .wrapper {
     flex-direction: column;
   }
+}
+.article.black {
+  color: #000;
 }
 
 .zabolevaniya-2 .section.article-title--blue h2 {

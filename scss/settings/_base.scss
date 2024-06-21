@@ -78,6 +78,18 @@ h5 {
   margin-top: torem(30);
 }
 
+.mt-120 {
+  margin-top: torem(120) !important;
+
+  @include sm-breakpoint {
+    margin-top: torem(50) !important;
+  }
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
 .parent {
   position: relative;
   display: inline-block;
@@ -124,10 +136,26 @@ h5 {
   font-family: "Finlandica BOLD", sans-serif !important;
 }
 
+.fw-regular {
+  font-family: "Open-sans regular", sans-serif !important;
+}
+
 .text-uppercase {
   text-transform: uppercase !important;
 }
 
 .border-none {
   border: none !important;
+}
+
+.fz-14 {
+  font-size: $sm !important;
+}
+
+.fz-16 {
+  font-size: $md !important;
+}
+
+.align-start {
+  align-self: flex-start !important;
 }

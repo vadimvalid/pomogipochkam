@@ -70,6 +70,10 @@ h5 {
   margin-top: 0 !important;
 }
 
+.mt-10 {
+  margin-top: torem(10) !important;
+}
+
 .mt-20 {
   margin-top: torem(20);
 }
@@ -97,6 +101,7 @@ h5 {
 .parent {
   position: relative;
   display: inline-block;
+  margin: 0 !important;
 
   .popup {
     position: absolute;

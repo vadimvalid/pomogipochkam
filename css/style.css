@@ -213,6 +213,10 @@ h5 {
   margin-top: 0 !important;
 }
 
+.mt-10 {
+  margin-top: 0.625rem !important;
+}
+
 .mt-20 {
   margin-top: 1.25rem;
 }
@@ -241,6 +245,7 @@ h5 {
 .parent {
   position: relative;
   display: inline-block;
+  margin: 0 !important;
 }
 .parent .popup {
   position: absolute;
@@ -2041,7 +2046,6 @@ h5 {
   font-family: "Open-sans regular";
   list-style-type: initial;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 .article .section.article-box--blue .wrapper__list li::marker {
   font-size: 1.5rem;
@@ -2222,7 +2226,6 @@ h5 {
   font-family: "Open-sans regular";
   list-style-type: initial;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 .article .section.article-title--grey--block .container ol li::marker {
   font-size: 1.5rem;
@@ -2251,7 +2254,6 @@ h5 {
   font-family: "Open-sans regular";
   list-style-type: initial;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 .article .section.article-title--grey--block .container ul li::marker {
   font-size: 1.5rem;
@@ -2325,7 +2327,6 @@ h5 {
   font-family: "Open-sans regular";
   list-style-type: initial;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 .article .section.article-list ul li::marker {
   font-size: 1.5rem;
@@ -2426,7 +2427,6 @@ h5 {
   font-family: "Open-sans regular";
   list-style-type: initial;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 .article .section.article-box-list .box__content ul li::marker {
   font-size: 1.5rem;
@@ -2733,7 +2733,6 @@ h5 {
   font-family: "Open-sans regular";
   list-style-type: initial;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 .article--priznaki .wrapper .item ul li::marker {
   font-size: 1.5rem;
@@ -2793,7 +2792,6 @@ h5 {
   font-family: "Open-sans regular";
   list-style-type: initial;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 .article--two-columns .wrapper ul li::marker {
   font-size: 1.5rem;
@@ -3080,7 +3078,6 @@ h5 {
   font-family: "Open-sans regular";
   list-style-type: initial;
   overflow-wrap: break-word;
-  text-wrap: balance;
 }
 .article--bg-blue .container > ul li::marker {
   font-size: 1.5rem;

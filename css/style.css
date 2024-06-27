@@ -1342,6 +1342,40 @@ h5 {
   }
 }
 
+.article.zabolevaniya-1 .section.top h1 {
+  font-size: 2.4375rem;
+}
+.article.zabolevaniya-1 .section.top + .article-text {
+  margin-top: 2.9375rem;
+}
+.article.zabolevaniya-1 .section.top + .article-text p {
+  letter-spacing: 0.8px;
+}
+.article.zabolevaniya-1 .section.article-title--blue {
+  margin-top: 3.125rem;
+}
+.article.zabolevaniya-1 .section.article-list .text {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
+}
+.article.zabolevaniya-1 .section.article--bg-blue {
+  padding: 1.875rem 0 2.25rem;
+}
+.article.zabolevaniya-1 .section.article--bg-blue .container .title {
+  margin-bottom: 0.625rem;
+}
+.article.zabolevaniya-1 .section.article--bg-blue .container p {
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+@media screen and (min-width: 767.98px) {
+  .article.zabolevaniya-1 .section.article--bg-blue .container p {
+    font-size: 1.125rem;
+  }
+}
+.article.zabolevaniya-1 .section.article-list ul {
+  padding-left: 1.25rem;
+}
+
 .section.links {
   padding: 3.4375rem 4.125rem;
 }
@@ -1956,6 +1990,9 @@ h5 {
   line-height: 1.14;
   color: #fff;
   text-transform: uppercase;
+}
+.article .section.top h1 span {
+  text-transform: lowercase;
 }
 .article .section.top .container {
   position: relative;
@@ -3040,13 +3077,15 @@ h5 {
   width: 35%;
 }
 .article.zabolevaniya-1 .article-text {
-  margin-bottom: 3.125rem;
+  margin-bottom: 2.875rem;
+  line-height: 1.2;
 }
 .article.zabolevaniya-1 .section.top:before {
   background-image: url("../images/zabolevaniya/zabol-bg.webp");
-  background-position: 68%;
+  background-position: 65%;
 }
 .article.zabolevaniya-2 .knowledge {
+  padding-bottom: 2.3125rem;
   background: none;
 }
 .article.zabolevaniya-2 .knowledge .buttons a {

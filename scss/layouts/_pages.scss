@@ -591,3 +591,58 @@
     }
   }
 }
+
+.article {
+  &.zabolevaniya-1 {
+    .section {
+      &.top {
+        h1 {
+          font-size: torem(39);
+        }
+
+        + .article-text {
+          margin-top: torem(47);
+
+          p {
+            letter-spacing: 0.8px;
+          }
+        }
+      }
+
+      &.article-title--blue {
+        margin-top: torem(50);
+      }
+
+      &.article-list {
+        .text {
+          font-family: "OpenSans-CondensedRegular", sans-serif;
+        }
+      }
+
+      &.article--bg-blue {
+        padding: torem(30) 0 torem(36);
+
+        .container {
+          .title {
+            margin-bottom: torem(10);
+          }
+
+          p {
+            letter-spacing: 0;
+            line-height: 1.4;
+
+            @media screen and (min-width: 767.98px) {
+              font-size: $lg;
+            }
+          }
+        }
+      }
+
+      &.article-list {
+        ul {
+          padding-left: torem(20);
+        }
+      }
+    }
+  }
+}

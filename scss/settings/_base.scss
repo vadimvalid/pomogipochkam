@@ -75,11 +75,15 @@ h5 {
 }
 
 .mt-20 {
-  margin-top: torem(20);
+  margin-top: torem(20) !important;
 }
 
 .mt-30 {
-  margin-top: torem(30);
+  margin-top: torem(30) !important;
+}
+
+.mt-50 {
+  margin-top: torem(50) !important;
 }
 
 .mt-120 {

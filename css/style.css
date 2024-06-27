@@ -218,11 +218,15 @@ h5 {
 }
 
 .mt-20 {
-  margin-top: 1.25rem;
+  margin-top: 1.25rem !important;
 }
 
 .mt-30 {
-  margin-top: 1.875rem;
+  margin-top: 1.875rem !important;
+}
+
+.mt-50 {
+  margin-top: 3.125rem !important;
 }
 
 .mt-120 {
@@ -999,7 +1003,14 @@ h5 {
 }
 
 .zabolevaniya {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
   color: #000;
+}
+.zabolevaniya strong {
+  font-family: "OpenSans-CondensedBold", sans-serif;
+}
+.zabolevaniya .header {
+  padding: 1.625rem 0 1.6875rem;
 }
 .zabolevaniya .hero {
   padding: 7.5625rem 0 7.625rem;
@@ -1008,11 +1019,12 @@ h5 {
 .zabolevaniya .hero:after {
   background-image: -webkit-image-set(url("../images/zabolevaniya/hero.webp") 1x, url("../images/zabolevaniya/hero-2x.webp") 2x);
   background-image: image-set(url("../images/zabolevaniya/hero.webp") 1x, url("../images/zabolevaniya/hero-2x.webp") 2x);
-  background-position: 66% bottom;
+  background-position: 70% bottom;
   z-index: 10;
 }
 .zabolevaniya .hero h1 {
   color: #3d3d40;
+  letter-spacing: 0.1px;
 }
 @media screen and (max-width: 991.98px) {
   .zabolevaniya .hero:after {
@@ -1036,9 +1048,104 @@ h5 {
 }
 .zabolevaniya .preview .wrapper h2 {
   color: #e3483a;
+  letter-spacing: 0.1px;
 }
 .zabolevaniya .preview.new {
   padding-bottom: 1.25rem;
+}
+.zabolevaniya .preview.new .wrapper > p {
+  flex: 0 1 61.5%;
+}
+.zabolevaniya .tabs {
+  margin-bottom: 0.625rem;
+}
+.zabolevaniya .tabs .container > p {
+  margin-bottom: 1.625rem;
+}
+.zabolevaniya .tabs .container > p span {
+  font-family: "OpenSans-CondensedBold", sans-serif;
+}
+.zabolevaniya .tabs .container > p.thin {
+  font-family: "OpenSans-CondensedLight", sans-serif;
+}
+.zabolevaniya .tabs button {
+  font-family: "Finlandica BOLD", sans-serif;
+}
+.zabolevaniya .tabs > div [role=tabpanel] {
+  padding-left: 1.75rem;
+  -webkit-transform: translateY(-24px);
+  transform: translateY(-24px);
+}
+.zabolevaniya .tabs > div [role=tabpanel] ul {
+  gap: 0.625rem;
+  padding-left: 1.75rem;
+}
+.zabolevaniya .tabs > div [role=tabpanel] ul li::marker {
+  font-size: 1.8125rem;
+}
+.zabolevaniya .tabs--space .container p {
+  line-height: 1.7;
+  margin-bottom: 44px;
+}
+.zabolevaniya .tabs--space .container p.thin {
+  margin-bottom: 3.125rem;
+}
+.zabolevaniya .section.tg .wrapper {
+  background-position: 92% bottom;
+}
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .section.tg .container {
+    padding: 0 2.375rem;
+  }
+}
+.zabolevaniya .title-description {
+  padding-top: 1.25rem;
+}
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .title-description .wrapper > p {
+    width: 85%;
+  }
+}
+.zabolevaniya .title-description .wrapper h2 {
+  letter-spacing: 0.1px;
+}
+.zabolevaniya .title-description .wrapper .block__content {
+  justify-content: space-between;
+}
+.zabolevaniya .title-description .wrapper .block__content ul {
+  padding-left: 1.875rem;
+}
+.zabolevaniya .title-description .wrapper .block__content .item:last-child {
+  flex: 0 1 22%;
+}
+.zabolevaniya .title-description .wrapper .block__content--images .item:last-child {
+  flex: 0 1 60%;
+}
+.zabolevaniya .section.info {
+  padding-top: 2.875rem;
+  padding-bottom: 0.625rem;
+}
+.zabolevaniya .section.info .wrapper {
+  gap: 0.8125rem 3.125rem;
+}
+.zabolevaniya .section.info .info__content {
+  padding-left: 1.25rem;
+}
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .section.info .info__content__image {
+    flex: 0 1 27.5%;
+  }
+}
+.zabolevaniya .section.info .info__content__text h4 {
+  font-family: "OpenSans-CondensedBold", sans-serif;
+  letter-spacing: 0.1px;
+}
+.zabolevaniya .section.info .info__content__text ul {
+  gap: 1.1875rem;
+  padding-left: 1.875rem;
+}
+.zabolevaniya .section.info .info__content__text > p:last-of-type {
+  margin-top: 0.625rem;
 }
 
 .home .main {

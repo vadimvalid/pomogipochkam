@@ -122,7 +122,16 @@
 }
 
 .zabolevaniya {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
   color: #000;
+
+  strong {
+    font-family: "OpenSans-CondensedBold", sans-serif;
+  }
+
+  .header {
+    padding: torem(26) 0 torem(27);
+  }
 
   .hero {
     padding: torem(121) 0 torem(122);
@@ -139,12 +148,13 @@
         url("../images/zabolevaniya/hero-2x.webp") 2x
       );
 
-      background-position: 66% bottom;
+      background-position: 70% bottom;
       z-index: 10;
     }
 
     h1 {
       color: $black;
+      letter-spacing: 0.1px;
     }
 
     @include md-breakpoint {
@@ -173,11 +183,151 @@
     .wrapper {
       h2 {
         color: $red;
+        letter-spacing: 0.1px;
       }
     }
 
     &.new {
       padding-bottom: torem(20);
+
+      .wrapper > p {
+        flex: 0 1 61.5%;
+      }
+    }
+  }
+
+  .tabs {
+    margin-bottom: torem(10);
+
+    .container > p {
+      margin-bottom: torem(26);
+
+      span {
+        font-family: "OpenSans-CondensedBold", sans-serif;
+      }
+
+      &.thin {
+        font-family: "OpenSans-CondensedLight", sans-serif;
+      }
+    }
+
+    button {
+      font-family: "Finlandica BOLD", sans-serif;
+    }
+
+    > div [role="tabpanel"] {
+      padding-left: torem(28);
+      transform: translateY(-24px);
+
+      ul {
+        gap: torem(10);
+        padding-left: torem(28);
+
+        li::marker {
+          font-size: torem(29);
+        }
+      }
+    }
+
+    &--space {
+      .container {
+        p {
+          line-height: 1.7;
+          margin-bottom: 44px;
+
+          &.thin {
+            margin-bottom: torem(50);
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+    &.tg {
+      .wrapper {
+        background-position: 92% bottom;
+      }
+
+      .container {
+        @media screen and (min-width: 767.98px) {
+          padding: 0 torem(38);
+        }
+      }
+    }
+  }
+
+  .title-description {
+    padding-top: torem(20);
+
+    .wrapper {
+      > p {
+        @media screen and (min-width: 767.98px) {
+          width: 85%;
+        }
+      }
+
+      h2 {
+        letter-spacing: 0.1px;
+      }
+
+      .block__content {
+        justify-content: space-between;
+        ul {
+          padding-left: torem(30);
+        }
+
+        .item {
+          &:last-child {
+            flex: 0 1 22%;
+          }
+        }
+
+        &--images {
+          .item {
+            &:last-child {
+              flex: 0 1 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section.info {
+    padding-top: torem(46);
+    padding-bottom: torem(10);
+
+    .wrapper {
+      gap: torem(13) torem(50);
+    }
+
+    .info__content {
+      padding-left: torem(20);
+
+      &__image {
+        @media screen and (min-width: 767.98px) {
+          flex: 0 1 27.5%;
+        }
+      }
+
+      &__text {
+        h4 {
+          font-family: "OpenSans-CondensedBold", sans-serif;
+          letter-spacing: 0.1px;
+        }
+
+        ul {
+          gap: torem(19);
+          padding-left: torem(30);
+        }
+
+        > p {
+          &:last-of-type {
+            margin-top: torem(10);
+          }
+        }
+      }
     }
   }
 }

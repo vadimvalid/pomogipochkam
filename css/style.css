@@ -225,6 +225,10 @@ h5 {
   margin-top: 1.875rem !important;
 }
 
+.mt-47 {
+  margin-top: 2.9375rem !important;
+}
+
 .mt-50 {
   margin-top: 3.125rem !important;
 }
@@ -297,6 +301,10 @@ h5 {
 
 .fw-regular {
   font-family: "Open-sans regular", sans-serif !important;
+}
+
+.fw-bold-opensans {
+  font-family: "OpenSans-CondensedBold", sans-serif !important;
 }
 
 .text-uppercase {
@@ -1053,6 +1061,9 @@ h5 {
 .zabolevaniya .preview.new {
   padding-bottom: 1.25rem;
 }
+.zabolevaniya .preview.new .wrapper {
+  color: #000;
+}
 .zabolevaniya .preview.new .wrapper > p {
   flex: 0 1 61.5%;
 }
@@ -1071,17 +1082,19 @@ h5 {
 .zabolevaniya .tabs button {
   font-family: "Finlandica BOLD", sans-serif;
 }
-.zabolevaniya .tabs > div [role=tabpanel] {
-  padding-left: 1.75rem;
-  -webkit-transform: translateY(-24px);
-  transform: translateY(-24px);
-}
-.zabolevaniya .tabs > div [role=tabpanel] ul {
-  gap: 0.625rem;
-  padding-left: 1.75rem;
-}
-.zabolevaniya .tabs > div [role=tabpanel] ul li::marker {
-  font-size: 1.8125rem;
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .tabs > div [role=tabpanel] {
+    padding-left: 1.75rem;
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+  }
+  .zabolevaniya .tabs > div [role=tabpanel] ul {
+    gap: 0.625rem;
+    padding-left: 1.75rem;
+  }
+  .zabolevaniya .tabs > div [role=tabpanel] ul li::marker {
+    font-size: 1.8125rem;
+  }
 }
 .zabolevaniya .tabs--space .container p {
   line-height: 1.7;
@@ -1101,6 +1114,12 @@ h5 {
 .zabolevaniya .title-description {
   padding-top: 1.25rem;
 }
+.zabolevaniya .title-description .wrapper {
+  color: #000;
+}
+.zabolevaniya .title-description .wrapper > p {
+  color: #000;
+}
 @media screen and (min-width: 767.98px) {
   .zabolevaniya .title-description .wrapper > p {
     width: 85%;
@@ -1112,8 +1131,10 @@ h5 {
 .zabolevaniya .title-description .wrapper .block__content {
   justify-content: space-between;
 }
-.zabolevaniya .title-description .wrapper .block__content ul {
-  padding-left: 1.875rem;
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .title-description .wrapper .block__content ul {
+    padding-left: 1.875rem;
+  }
 }
 .zabolevaniya .title-description .wrapper .block__content .item:last-child {
   flex: 0 1 22%;
@@ -1121,15 +1142,19 @@ h5 {
 .zabolevaniya .title-description .wrapper .block__content--images .item:last-child {
   flex: 0 1 60%;
 }
-.zabolevaniya .section.info {
-  padding-top: 2.875rem;
-  padding-bottom: 0.625rem;
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .section.info {
+    padding-top: 2.875rem;
+    padding-bottom: 0.625rem;
+  }
 }
 .zabolevaniya .section.info .wrapper {
   gap: 0.8125rem 3.125rem;
 }
-.zabolevaniya .section.info .info__content {
-  padding-left: 1.25rem;
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .section.info .info__content {
+    padding-left: 1.25rem;
+  }
 }
 @media screen and (min-width: 767.98px) {
   .zabolevaniya .section.info .info__content__image {
@@ -1140,9 +1165,11 @@ h5 {
   font-family: "OpenSans-CondensedBold", sans-serif;
   letter-spacing: 0.1px;
 }
-.zabolevaniya .section.info .info__content__text ul {
-  gap: 1.1875rem;
-  padding-left: 1.875rem;
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .section.info .info__content__text ul {
+    gap: 1.1875rem;
+    padding-left: 1.875rem;
+  }
 }
 .zabolevaniya .section.info .info__content__text > p:last-of-type {
   margin-top: 0.625rem;
@@ -1358,10 +1385,10 @@ h5 {
   font-family: "OpenSans-CondensedRegular", sans-serif;
 }
 .article.zabolevaniya-1 .section.article--bg-blue {
-  padding: 1.875rem 0 2.25rem;
+  padding: 2.25rem 0 0rem;
 }
 .article.zabolevaniya-1 .section.article--bg-blue .container .title {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.9375rem;
 }
 .article.zabolevaniya-1 .section.article--bg-blue .container p {
   letter-spacing: 0;
@@ -1369,11 +1396,13 @@ h5 {
 }
 @media screen and (min-width: 767.98px) {
   .article.zabolevaniya-1 .section.article--bg-blue .container p {
-    font-size: 1.125rem;
+    font-size: 1.125rem !important;
   }
 }
-.article.zabolevaniya-1 .section.article-list ul {
-  padding-left: 1.25rem;
+@media screen and (min-width: 767.98px) {
+  .article.zabolevaniya-1 .section.article-list ul {
+    padding-left: 1.25rem;
+  }
 }
 
 .section.links {
@@ -1933,7 +1962,7 @@ h5 {
 }
 @media screen and (max-width: 767.98px) {
   .section.info {
-    padding: 2.5rem 1.875rem;
+    padding: 2.5rem 0 1.875rem;
   }
   .section.info .wrapper {
     flex-direction: column;

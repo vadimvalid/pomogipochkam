@@ -190,8 +190,12 @@
     &.new {
       padding-bottom: torem(20);
 
-      .wrapper > p {
-        flex: 0 1 61.5%;
+      .wrapper {
+        color: #000;
+
+        > p {
+          flex: 0 1 61.5%;
+        }
       }
     }
   }
@@ -216,15 +220,17 @@
     }
 
     > div [role="tabpanel"] {
-      padding-left: torem(28);
-      transform: translateY(-24px);
-
-      ul {
-        gap: torem(10);
+      @media screen and (min-width: 767.98px) {
         padding-left: torem(28);
+        transform: translateY(-24px);
 
-        li::marker {
-          font-size: torem(29);
+        ul {
+          gap: torem(10);
+          padding-left: torem(28);
+
+          li::marker {
+            font-size: torem(29);
+          }
         }
       }
     }
@@ -261,7 +267,11 @@
     padding-top: torem(20);
 
     .wrapper {
+      color: #000;
+
       > p {
+        color: #000;
+
         @media screen and (min-width: 767.98px) {
           width: 85%;
         }
@@ -273,8 +283,11 @@
 
       .block__content {
         justify-content: space-between;
-        ul {
-          padding-left: torem(30);
+
+        @media screen and (min-width: 767.98px) {
+          ul {
+            padding-left: torem(30);
+          }
         }
 
         .item {
@@ -295,15 +308,19 @@
   }
 
   .section.info {
-    padding-top: torem(46);
-    padding-bottom: torem(10);
+    @media screen and (min-width: 767.98px) {
+      padding-top: torem(46);
+      padding-bottom: torem(10);
+    }
 
     .wrapper {
       gap: torem(13) torem(50);
     }
 
     .info__content {
-      padding-left: torem(20);
+      @media screen and (min-width: 767.98px) {
+        padding-left: torem(20);
+      }
 
       &__image {
         @media screen and (min-width: 767.98px) {
@@ -317,9 +334,11 @@
           letter-spacing: 0.1px;
         }
 
-        ul {
-          gap: torem(19);
-          padding-left: torem(30);
+        @media screen and (min-width: 767.98px) {
+          ul {
+            gap: torem(19);
+            padding-left: torem(30);
+          }
         }
 
         > p {
@@ -620,11 +639,11 @@
       }
 
       &.article--bg-blue {
-        padding: torem(30) 0 torem(36);
+        padding: torem(36) 0 torem(0);
 
         .container {
           .title {
-            margin-bottom: torem(10);
+            margin-bottom: torem(15);
           }
 
           p {
@@ -632,15 +651,17 @@
             line-height: 1.4;
 
             @media screen and (min-width: 767.98px) {
-              font-size: $lg;
+              font-size: $lg !important;
             }
           }
         }
       }
 
       &.article-list {
-        ul {
-          padding-left: torem(20);
+        @media screen and (min-width: 767.98px) {
+          ul {
+            padding-left: torem(20);
+          }
         }
       }
     }

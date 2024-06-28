@@ -98,7 +98,7 @@
     }
 
     @include sm-breakpoint {
-      padding: torem(40) torem(30);
+      padding: torem(40) 0 torem(30);
 
       .wrapper {
         flex-direction: column;

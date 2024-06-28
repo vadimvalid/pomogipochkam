@@ -250,6 +250,10 @@ h5 {
   padding-top: 0 !important;
 }
 
+.pb-50 {
+  padding-bottom: 3.125rem !important;
+}
+
 .parent {
   position: relative;
   display: inline-block;

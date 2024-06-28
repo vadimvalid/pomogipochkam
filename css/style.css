@@ -1178,6 +1178,29 @@ h5 {
 .zabolevaniya .section.info .info__content__text > p:last-of-type {
   margin-top: 0.625rem;
 }
+.zabolevaniya .section.knowledge p {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
+}
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya .section.knowledge p {
+    font-size: 1.625rem;
+  }
+}
+.zabolevaniya .button {
+  font-family: "OpenSans-CondensedBold", sans-serif;
+}
+.zabolevaniya.article .section.article-list ul li {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
+}
+.zabolevaniya .article--block-arrows .wrapper .item {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
+}
+.zabolevaniya .article--text-bold-image .wrapper p {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
+}
+.zabolevaniya .article--bg-blue {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
+}
 
 .home .main {
   display: -ms-grid;
@@ -1390,6 +1413,7 @@ h5 {
 }
 .article.zabolevaniya-1 .section.article--bg-blue {
   padding: 2.25rem 0 0rem;
+  font-family: "OpenSans-CondensedRegular", sans-serif;
 }
 .article.zabolevaniya-1 .section.article--bg-blue .container .title {
   margin-bottom: 0.9375rem;
@@ -1404,9 +1428,22 @@ h5 {
   }
 }
 @media screen and (min-width: 767.98px) {
+  .article.zabolevaniya-1 .section.article--bg-blue ul li {
+    font-size: 1.125rem;
+  }
+}
+.article.zabolevaniya-1 .section.article-list {
+  font-family: "OpenSans-CondensedRegular", sans-serif;
+  font-size: 1rem;
+}
+@media screen and (min-width: 767.98px) {
   .article.zabolevaniya-1 .section.article-list ul {
     padding-left: 1.25rem;
   }
+}
+.article.zabolevaniya-1 .section.article--blue-bold-text .container p,
+.article.zabolevaniya-1 .section.article--blue-bold-text .container li {
+  font-family: "OpenSans-CondensedBold", sans-serif;
 }
 
 .section.links {

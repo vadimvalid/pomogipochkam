@@ -349,6 +349,39 @@
       }
     }
   }
+
+  .section.knowledge {
+    p {
+      font-family: "OpenSans-CondensedRegular", sans-serif;
+      @media screen and (min-width: 767.98px) {
+        font-size: torem(26);
+      }
+    }
+  }
+
+  .button {
+    font-family: "OpenSans-CondensedBold", sans-serif;
+  }
+
+  &.article {
+    .section.article-list {
+      ul li {
+        font-family: "OpenSans-CondensedRegular", sans-serif;
+      }
+    }
+  }
+
+  .article--block-arrows .wrapper .item {
+    font-family: "OpenSans-CondensedRegular", sans-serif;
+  }
+
+  .article--text-bold-image .wrapper p {
+    font-family: "OpenSans-CondensedRegular", sans-serif;
+  }
+
+  .article--bg-blue {
+    font-family: "OpenSans-CondensedRegular", sans-serif;
+  }
 }
 
 .home {
@@ -640,6 +673,7 @@
 
       &.article--bg-blue {
         padding: torem(36) 0 torem(0);
+        font-family: "OpenSans-CondensedRegular", sans-serif;
 
         .container {
           .title {
@@ -655,13 +689,31 @@
             }
           }
         }
+
+        ul {
+          li {
+            @media screen and (min-width: 767.98px) {
+              font-size: $lg;
+            }
+          }
+        }
       }
 
       &.article-list {
+        font-family: "OpenSans-CondensedRegular", sans-serif;
+        font-size: $md;
+
         @media screen and (min-width: 767.98px) {
           ul {
             padding-left: torem(20);
           }
+        }
+      }
+
+      &.article--blue-bold-text .container {
+        p,
+        li {
+          font-family: "OpenSans-CondensedBold", sans-serif;
         }
       }
     }

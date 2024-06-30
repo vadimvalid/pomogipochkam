@@ -674,6 +674,7 @@
       &.article--bg-blue {
         padding: torem(36) 0 torem(0);
         font-family: "OpenSans-CondensedRegular", sans-serif;
+        font-size: $lg;
 
         .container {
           .title {
@@ -683,10 +684,6 @@
           p {
             letter-spacing: 0;
             line-height: 1.4;
-
-            @media screen and (min-width: 767.98px) {
-              font-size: $lg !important;
-            }
           }
         }
 

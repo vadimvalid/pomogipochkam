@@ -165,6 +165,10 @@ h5 {
   font-family: "OpenSans-CondensedBold", sans-serif !important;
 }
 
+.fw-light-opensans {
+  font-family: "OpenSans-CondensedLight", sans-serif !important;
+}
+
 .text-uppercase {
   text-transform: uppercase !important;
 }
@@ -179,6 +183,14 @@ h5 {
 
 .fz-16 {
   font-size: $md !important;
+}
+
+.fz-20 {
+  font-size: torem(20) !important;
+}
+
+.fz-22 {
+  font-size: torem(22) !important;
 }
 
 .align-start {

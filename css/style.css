@@ -311,6 +311,10 @@ h5 {
   font-family: "OpenSans-CondensedBold", sans-serif !important;
 }
 
+.fw-light-opensans {
+  font-family: "OpenSans-CondensedLight", sans-serif !important;
+}
+
 .text-uppercase {
   text-transform: uppercase !important;
 }
@@ -325,6 +329,14 @@ h5 {
 
 .fz-16 {
   font-size: 1rem !important;
+}
+
+.fz-20 {
+  font-size: 1.25rem !important;
+}
+
+.fz-22 {
+  font-size: 1.375rem !important;
 }
 
 .align-start {
@@ -1414,6 +1426,7 @@ h5 {
 .article.zabolevaniya-1 .section.article--bg-blue {
   padding: 2.25rem 0 0rem;
   font-family: "OpenSans-CondensedRegular", sans-serif;
+  font-size: 1.125rem;
 }
 .article.zabolevaniya-1 .section.article--bg-blue .container .title {
   margin-bottom: 0.9375rem;
@@ -1421,11 +1434,6 @@ h5 {
 .article.zabolevaniya-1 .section.article--bg-blue .container p {
   letter-spacing: 0;
   line-height: 1.4;
-}
-@media screen and (min-width: 767.98px) {
-  .article.zabolevaniya-1 .section.article--bg-blue .container p {
-    font-size: 1.125rem !important;
-  }
 }
 @media screen and (min-width: 767.98px) {
   .article.zabolevaniya-1 .section.article--bg-blue ul li {
@@ -1526,7 +1534,7 @@ h5 {
 .section.biopsiya .wrapper .item:last-child {
   position: relative;
   font-family: "Finlandica BOLD";
-  font-size: 1.9375rem;
+  font-size: 2rem;
   color: #db790f;
   text-align: center;
   text-transform: uppercase;
@@ -2100,7 +2108,7 @@ h5 {
 }
 .article .section.article-title--blue h2 {
   font-family: "Finlandica medium";
-  font-size: 1.9375rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.14;
   color: #4358c1;
@@ -2136,7 +2144,7 @@ h5 {
 }
 .article .section.article-title--red h2 {
   font-family: "Finlandica medium";
-  font-size: 1.9375rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.14;
   color: #e3483a;
@@ -2155,7 +2163,7 @@ h5 {
 }
 .article .section.article-title--orange h2 {
   font-family: "Finlandica medium";
-  font-size: 1.9375rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.14;
   color: #db790f;
@@ -2218,7 +2226,7 @@ h5 {
 }
 .article .section.article-box--blue .wrapper h2 {
   font-family: "Finlandica medium";
-  font-size: 1.9375rem;
+  font-size: 2rem;
   line-height: 1.14;
   font-weight: 500;
   color: #fff;
@@ -2407,7 +2415,7 @@ h5 {
   width: 45%;
   margin-top: 2.1875rem;
   font-family: "Finlandica medium";
-  font-size: 1.9375rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.14;
   color: #3d3d40;
@@ -3170,9 +3178,21 @@ h5 {
     padding: 0.9375rem 1.5625rem;
   }
 }
+.article.zabolevaniya-2 .section.article-list {
+  font-size: 1.125rem;
+}
+.article.zabolevaniya-2 .article--bg-blue .title h2 {
+  font-size: 2rem;
+}
 .article.sindrom .section.top:before {
   background-image: url("../images/zabolevaniya/zabol-bg.webp");
   background-position: 68%;
+}
+.article.sindrom .section.article-table {
+  margin-bottom: 1.25rem;
+}
+.article.sindrom .section.article-table table {
+  font-size: 1rem;
 }
 .article.sindrom .section.article-table table th {
   background: transparent;
@@ -3208,7 +3228,7 @@ h5 {
 }
 .article--bg-blue .title h2 {
   font-family: "Finlandica medium";
-  font-size: 1.9375rem;
+  font-size: 2rem;
   line-height: 1.14;
   font-weight: 500;
   color: #fff;
@@ -3412,12 +3432,15 @@ h5 {
 }
 
 .zabolevaniya-2 .section.article-title--blue h2 {
-  font-size: 1.9375rem;
   letter-spacing: 0.5px;
 }
 .zabolevaniya-2 .section.article-title--orange h2 {
-  font-size: 1.9375rem;
   letter-spacing: 0.5px;
+}
+@media screen and (min-width: 767.98px) {
+  .zabolevaniya-2 .article--bg-blue .container > p {
+    font-size: 1.125rem;
+  }
 }
 
 .section.tg {

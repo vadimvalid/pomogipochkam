@@ -72,7 +72,7 @@
 
       h2 {
         font-family: "Finlandica medium";
-        font-size: torem(31);
+        font-size: torem(32);
         font-weight: 500;
         line-height: 1.14;
         color: $mainColor;
@@ -114,7 +114,7 @@
 
       h2 {
         font-family: "Finlandica medium";
-        font-size: torem(31);
+        font-size: torem(32);
         font-weight: 500;
         line-height: 1.14;
         color: $red;
@@ -135,7 +135,7 @@
 
       h2 {
         font-family: "Finlandica medium";
-        font-size: torem(31);
+        font-size: torem(32);
         font-weight: 500;
         line-height: 1.14;
         color: $secondaryColor;
@@ -205,7 +205,7 @@
 
           h2 {
             font-family: "Finlandica medium";
-            font-size: torem(31);
+            font-size: torem(32);
             line-height: 1.14;
             font-weight: 500;
             color: $white;
@@ -429,7 +429,7 @@
         width: 45%;
         margin-top: torem(35);
         font-family: "Finlandica medium";
-        font-size: torem(31);
+        font-size: torem(32);
         font-weight: 500;
         line-height: 1.14;
         color: $black;
@@ -1408,6 +1408,16 @@
         }
       }
     }
+
+    .section {
+      &.article-list {
+        font-size: $lg;
+      }
+    }
+
+    .article--bg-blue .title h2 {
+      font-size: torem(32);
+    }
   }
 
   &.sindrom {
@@ -1419,7 +1429,9 @@
     }
 
     .section.article-table {
+      margin-bottom: torem(20);
       table {
+        font-size: $md;
         th {
           background: transparent;
           border: none;
@@ -1466,7 +1478,7 @@
 
       h2 {
         font-family: "Finlandica medium";
-        font-size: torem(31);
+        font-size: torem(32);
         line-height: 1.14;
         font-weight: 500;
         color: $white;
@@ -1698,12 +1710,20 @@
 
 .zabolevaniya-2 {
   .section.article-title--blue h2 {
-    font-size: torem(31);
     letter-spacing: 0.5px;
   }
 
   .section.article-title--orange h2 {
-    font-size: torem(31);
     letter-spacing: 0.5px;
+  }
+
+  .article--bg-blue {
+    @media screen and (min-width: 767.98px) {
+      .container {
+        > p {
+          font-size: $lg;
+        }
+      }
+    }
   }
 }

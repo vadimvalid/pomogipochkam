@@ -1,64 +1,12 @@
 .section {
   &.map {
-    .wrapper {
-      @include sectionShadow;
+    padding-bottom: torem(66);
 
-      display: flex;
-      flex-wrap: wrap;
-      gap: torem(32) torem(40);
-      padding: torem(46) torem(55) torem(46) torem(34);
-
-      .item {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: torem(20);
-        font-size: torem(20);
-        line-height: 1.25;
-
-        h3 {
-          font-family: "Open-sans bold";
-          font-size: torem(24);
-          line-height: 1.05;
-          text-wrap: pretty;
-        }
-
-        a {
-          font-family: "Open-sans bold";
-          font-size: torem(20);
-          color: $mainColor;
-          line-height: 1.2;
-        }
-
-        ul {
-          padding-left: torem(36);
-          list-style-type: disc;
-
-          li {
-            font-size: torem(20);
-            line-height: 1.25;
-            list-style-type: initial;
-
-            &::marker {
-              font-size: torem(24);
-              color: $mainColor;
-            }
-          }
-        }
-
-        &:first-child {
-          flex: 0 1 40%;
-          gap: torem(40);
-        }
-
-        &:nth-child(2) {
-          flex: 0 1 56%;
-        }
-
-        &:nth-child(3) {
-          flex: 0 1 100%;
-        }
-      }
+    .item {
+      padding: torem(80) torem(86) torem(56) torem(90);
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0px 0px 17.45px 0px #00000040;
     }
   }
 }

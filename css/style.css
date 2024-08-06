@@ -1582,57 +1582,14 @@ h5 {
   }
 }
 
-.section.map .wrapper {
-  border-radius: 18px;
+.section.map {
+  padding-bottom: 4.125rem;
+}
+.section.map .item {
+  padding: 5rem 5.375rem 3.5rem 5.625rem;
   background: #fff;
-  box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem 2.5rem;
-  padding: 2.875rem 3.4375rem 2.875rem 2.125rem;
-}
-.section.map .wrapper .item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  font-size: 1.25rem;
-  line-height: 1.25;
-}
-.section.map .wrapper .item h3 {
-  font-family: "Open-sans bold";
-  font-size: 1.5rem;
-  line-height: 1.05;
-  text-wrap: pretty;
-}
-.section.map .wrapper .item a {
-  font-family: "Open-sans bold";
-  font-size: 1.25rem;
-  color: #4358c1;
-  line-height: 1.2;
-}
-.section.map .wrapper .item ul {
-  padding-left: 2.25rem;
-  list-style-type: disc;
-}
-.section.map .wrapper .item ul li {
-  font-size: 1.25rem;
-  line-height: 1.25;
-  list-style-type: initial;
-}
-.section.map .wrapper .item ul li::marker {
-  font-size: 1.5rem;
-  color: #4358c1;
-}
-.section.map .wrapper .item:first-child {
-  flex: 0 1 40%;
-  gap: 2.5rem;
-}
-.section.map .wrapper .item:nth-child(2) {
-  flex: 0 1 56%;
-}
-.section.map .wrapper .item:nth-child(3) {
-  flex: 0 1 100%;
+  border-radius: 18px;
+  box-shadow: 0px 0px 17.45px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .section.hbp .wrapper {

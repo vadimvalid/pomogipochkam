@@ -57,12 +57,34 @@
       sizes="512x512"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
+    <style>
+      @font-face {
+        font-family: "OpenSans-CondensedRegular";
+        src: url("../../fonts/OpenSans_SemiCondensed-Regular.woff2")
+          format("woff2");
+        font-display: swap;
+        font-weight: 400;
+        font-style: normal;
+      }
 
+      @font-face {
+        font-family: "OpenSans-CondensedBold";
+        src: url("../../fonts/OpenSans_SemiCondensed-Bold.woff2")
+          format("woff2");
+        font-display: swap;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "OpenSans-CondensedLight";
+        src: url("../../fonts/OpenSans_SemiCondensed-Light.woff2")
+          format("woff2");
+        font-display: swap;
+        font-weight: 300;
+        font-style: normal;
+      }
+    </style>
     <link rel="stylesheet" href="../../css/style.css" />
     <title>помогипочкам.рф</title>
     <script type="text/javascript">
@@ -154,7 +176,33 @@
             </ol>
           </div>
         </div>
-
+        <section class="section price--content article-list">
+          <div class="container">
+            <div class="left">
+              <h2>Пройти биопсию почки можно двумя путями:</h2>
+              <ul>
+                <li>
+                  бесплатно (оплачивает фонд обязательного медицинского
+                  страхования – ОМС)
+                </li>
+                <li>платно, за свой счет</li>
+              </ul>
+            </div>
+            <div class="right">
+              <p>
+                Согласно законодательству Российской Федерации, пациент имеет
+                право получить медицинскую помощь в любом государственном
+                медицинском учреждении страны, поэтому вы можете попросить
+                своего доктора выдать направление в центр, который выбрали
+                именно вы.
+              </p>
+              <p class="bold blue">
+                Подробнее о порядке получения направления и выборе медицинского
+                центра
+              </p>
+            </div>
+          </div>
+        </section>
         <section class="section knowledge">
           <div class="container">
             <div class="wrapper">
@@ -215,10 +263,5 @@
         </div>
       </footer>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
   </body>
 </html>

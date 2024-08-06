@@ -824,6 +824,39 @@
     }
   }
 
+  &--price {
+    .section {
+      &.top {
+        position: relative;
+        background:
+          linear-gradient(0deg, #4358c1, #4358c1),
+          radial-gradient(
+              41.67% 101.57% at 52.92% 94.32%,
+              rgba(255, 255, 255, 0.3) 0%,
+              rgba(255, 255, 255, 0) 100%
+            )
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: url("../images/article/bg-price-1.svg"),
+            url("../images/article/bg-price-2.svg"),
+            url("../images/article/bg-price-3.svg");
+          background-position:
+            62% bottom,
+            65% bottom,
+            70% 75%;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
   &--creatine {
     .section {
       &.top {

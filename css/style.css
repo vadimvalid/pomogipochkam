@@ -1582,57 +1582,28 @@ h5 {
   }
 }
 
-.section.map .wrapper {
-  border-radius: 18px;
+.section.map {
+  padding-bottom: 4.125rem;
+}
+.section.map .item {
+  padding: 5rem 5.375rem 3.5rem 5.625rem;
   background: #fff;
-  box-shadow: 0px 0px 17.455px 0px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem 2.5rem;
-  padding: 2.875rem 3.4375rem 2.875rem 2.125rem;
+  border-radius: 18px;
+  box-shadow: 0px 0px 17.45px 0px rgba(0, 0, 0, 0.2509803922);
 }
-.section.map .wrapper .item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  font-size: 1.25rem;
-  line-height: 1.25;
+.section.map .item img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
 }
-.section.map .wrapper .item h3 {
-  font-family: "Open-sans bold";
-  font-size: 1.5rem;
-  line-height: 1.05;
-  text-wrap: pretty;
-}
-.section.map .wrapper .item a {
-  font-family: "Open-sans bold";
-  font-size: 1.25rem;
-  color: #4358c1;
-  line-height: 1.2;
-}
-.section.map .wrapper .item ul {
-  padding-left: 2.25rem;
-  list-style-type: disc;
-}
-.section.map .wrapper .item ul li {
-  font-size: 1.25rem;
-  line-height: 1.25;
-  list-style-type: initial;
-}
-.section.map .wrapper .item ul li::marker {
-  font-size: 1.5rem;
-  color: #4358c1;
-}
-.section.map .wrapper .item:first-child {
-  flex: 0 1 40%;
-  gap: 2.5rem;
-}
-.section.map .wrapper .item:nth-child(2) {
-  flex: 0 1 56%;
-}
-.section.map .wrapper .item:nth-child(3) {
-  flex: 0 1 100%;
+@media screen and (max-width: 767.98px) {
+  .section.map {
+    padding-bottom: 2.5rem;
+  }
+  .section.map .item {
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
 }
 
 .section.hbp .wrapper {
@@ -2747,6 +2718,33 @@ h5 {
   background-repeat: no-repeat;
   background-size: 8.125rem 6.25rem;
 }
+.article--price .section.top {
+  position: relative;
+  background: linear-gradient(0deg, #4358c1, #4358c1), radial-gradient(41.67% 101.57% at 52.92% 94.32%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.article--price .section.top:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/article/bg-price-1.svg"), url("../images/article/bg-price-2.svg"), url("../images/article/bg-price-3.svg");
+  background-position: 62% bottom, 65% bottom, 70% 75%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767.98px) {
+  .article--price .section.top:before {
+    background-position: 65% bottom, 72% bottom, 86% 75%;
+    background-size: 3.75rem 3.75rem, 5rem 5rem, 3.75rem 3.75rem;
+  }
+}
+@media (max-width: 450px) {
+  .article--price .section.top:before {
+    background-position: 70% bottom, 78% bottom, 90% 75%;
+    background-size: 2.5rem 2.5rem, 3.125rem 3.125rem, 2.5rem 2.5rem;
+  }
+}
 .article--creatine .section.top {
   position: relative;
   background: radial-gradient(101.79% 48.18% at 52.92% 94.32%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #4358c1;
@@ -3440,6 +3438,75 @@ h5 {
 @media screen and (min-width: 767.98px) {
   .zabolevaniya-2 .article--bg-blue .container > p {
     font-size: 1.125rem;
+  }
+}
+
+.price--content {
+  padding: 0 0 5.375rem;
+  font-family: "OpenSans-CondensedRegular";
+}
+.price--content .container {
+  display: flex;
+  gap: 2.5rem;
+  padding-right: 5.625rem;
+}
+.price--content .container > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+  letter-spacing: 0px;
+}
+.price--content .container > div p {
+  font-size: 1.25rem;
+  line-height: 1.5625rem;
+}
+.price--content .container > div p.bold.blue {
+  font-weight: 700;
+  color: #4358c1;
+}
+.price--content .container > div:first-child {
+  flex: 0 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  padding-top: 0.5rem;
+}
+.price--content .container > div:first-child h2 {
+  font-family: "OpenSans-CondensedBold";
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  text-wrap: pretty;
+}
+.price--content .container > div:first-child ul {
+  gap: 0.875rem;
+}
+@media screen and (max-width: 767.98px) {
+  .price--content {
+    padding: 0 0 3.75rem;
+  }
+  .price--content .container {
+    flex-direction: column;
+    gap: 1.875rem;
+    padding-right: 1.25rem;
+  }
+  .price--content .container > div {
+    gap: 1rem;
+  }
+  .price--content .container > div p {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  .price--content .container > div:first-child {
+    flex: 0 1 100%;
+    padding-top: 0;
+  }
+  .price--content .container > div:first-child h2 {
+    font-size: 1.25rem;
+  }
+  .price--content .container > div:first-child ul {
+    gap: 0.625rem;
   }
 }
 

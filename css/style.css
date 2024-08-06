@@ -1591,6 +1591,20 @@ h5 {
   border-radius: 18px;
   box-shadow: 0px 0px 17.45px 0px rgba(0, 0, 0, 0.2509803922);
 }
+.section.map .item img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 767.98px) {
+  .section.map {
+    padding-bottom: 2.5rem;
+  }
+  .section.map .item {
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+  }
+}
 
 .section.hbp .wrapper {
   display: flex;

@@ -7,6 +7,20 @@
       background: #fff;
       border-radius: 18px;
       box-shadow: 0px 0px 17.45px 0px #00000040;
+
+      img {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    @include sm-breakpoint {
+      padding-bottom: torem(40);
+
+      .item {
+        padding: torem(40) torem(40) torem(40) torem(40);
+      }
     }
   }
 }

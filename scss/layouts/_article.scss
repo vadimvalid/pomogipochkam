@@ -1800,11 +1800,11 @@
       p {
         font-size: torem(20);
         line-height: torem(25);
+      }
 
-        &.bold.blue {
-          font-weight: 700;
-          color: #4358c1;
-        }
+      a {
+        font-weight: 700;
+        color: #4358c1;
       }
 
       &:first-child {
@@ -1812,7 +1812,6 @@
         display: flex;
         flex-direction: column;
         gap: torem(18);
-        padding-top: torem(8);
 
         h2 {
           font-family: "OpenSans-CondensedBold";

@@ -3460,7 +3460,7 @@ h5 {
   font-size: 1.25rem;
   line-height: 1.5625rem;
 }
-.price--content .container > div p.bold.blue {
+.price--content .container > div a {
   font-weight: 700;
   color: #4358c1;
 }
@@ -3469,7 +3469,6 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
-  padding-top: 0.5rem;
 }
 .price--content .container > div:first-child h2 {
   font-family: "OpenSans-CondensedBold";

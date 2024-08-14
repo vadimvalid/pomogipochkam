@@ -2,6 +2,20 @@
   &.map {
     padding-bottom: torem(66);
 
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: torem(26);
+    }
+
+    h2 {
+      font-family: "OpenSans-CondensedBold";
+      font-size: torem(24);
+      line-height: 1.1;
+      font-weight: 700;
+      text-wrap: pretty;
+    }
+
     .item {
       background: #fff;
       border-radius: 18px;
@@ -17,6 +31,10 @@
 
     @include sm-breakpoint {
       padding-bottom: torem(40);
+
+      .container {
+        gap: torem(16);
+      }
 
       .item {
         iframe {

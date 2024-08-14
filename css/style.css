@@ -1585,6 +1585,18 @@ h5 {
 .section.map {
   padding-bottom: 4.125rem;
 }
+.section.map .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+.section.map h2 {
+  font-family: "OpenSans-CondensedBold";
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  text-wrap: pretty;
+}
 .section.map .item {
   background: #fff;
   border-radius: 18px;
@@ -1599,6 +1611,9 @@ h5 {
 @media screen and (max-width: 767.98px) {
   .section.map {
     padding-bottom: 2.5rem;
+  }
+  .section.map .container {
+    gap: 1rem;
   }
   .section.map .item iframe {
     height: 400px;
@@ -3456,9 +3471,22 @@ h5 {
   gap: 1.625rem;
   letter-spacing: 0px;
 }
+.price--content .container > div h2 {
+  font-family: "OpenSans-CondensedBold";
+  font-size: 1.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  text-wrap: pretty;
+}
 .price--content .container > div p {
   font-size: 1.25rem;
   line-height: 1.5625rem;
+}
+.price--content .container > div p.blue {
+  color: #4358c1;
+}
+.price--content .container > div p.italic {
+  font-style: italic;
 }
 .price--content .container > div a {
   font-weight: 700;
@@ -3469,13 +3497,6 @@ h5 {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
-}
-.price--content .container > div:first-child h2 {
-  font-family: "OpenSans-CondensedBold";
-  font-size: 1.5rem;
-  line-height: 1.1;
-  font-weight: 700;
-  text-wrap: pretty;
 }
 .price--content .container > div:first-child ul {
   gap: 0.875rem;
